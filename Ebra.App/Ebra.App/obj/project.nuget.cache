@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8oqmIrMqDoYs2UldYN5WvHaIKNvgLaqpfV3PKSXT4HbNWtBnLrnm2OMMXOARDLhXHVdA976MwJXw3bvlEFl48w==",
+  "success": true,
+  "projectFilePath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
+  "expectedPackageFiles": [
+    "D:\\NUGET_PACKAGES\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
