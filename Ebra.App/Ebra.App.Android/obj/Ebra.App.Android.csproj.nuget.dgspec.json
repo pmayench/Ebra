@@ -106,6 +106,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Tamarack.Standard": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.7.0, )"

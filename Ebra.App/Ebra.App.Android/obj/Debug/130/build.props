@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638308919758932517
+_nugetassetstimestamp=638308929748719380
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=d:\pilotos\pm\test\ebra\ebra.app\ebra.app.android\ebra.app.android.csproj
+projectfullpath=d:\pilotos\pm\ebra\ebra.app\ebra.app.android\ebra.app.android.csproj

@@ -1,8 +1,11 @@
-using Castle.Components.DictionaryAdapter;
 using Moq;
-using System.ComponentModel;
-using System.Net.NetworkInformation;
 using FluentAssertions;
+using Tamarack.Pipeline;
+using Ebra.App.Models;
+using Ebra.App.Services.Interfaces;
+using Xamarin.Forms;
+using Ebra.App.Services;
+using Ebra.App.ViewModels.Start;
 
 namespace TestProject
 {
@@ -50,7 +53,7 @@ namespace TestProject
 
         Class1 class1;
         [TestInitialize]
-        public void inicializar()
+        public void initialize()
         {
             class1 = new Class1()
             {
@@ -61,7 +64,7 @@ namespace TestProject
         }
 
         [TestMethod]
-        public void testInicializacion()
+        public void initialationTest()
         {
             Assert.AreEqual(typeof(bool), class1.metodoInvocado.GetType());
             Assert.IsNotNull(class1.metodoInvocado);
@@ -69,7 +72,7 @@ namespace TestProject
         }
 
         [TestCleanup]
-        public void limpiar()
+        public void clean()
         {
             class1 = null;
         }
@@ -77,7 +80,7 @@ namespace TestProject
         [TestMethod]
         [DataRow(1)]
         [DataRow(2)]
-        public void trabajarConDatos(int value)
+        public void workWithData(int value)
         {
             var result = value + 1;
             Assert.AreEqual(2, result);
@@ -86,7 +89,7 @@ namespace TestProject
         [TestMethod]
         [DataRow("hola")]
         [DataRow("e")]
-        public void trabajarConDatosTexto(string value)
+        public void workWithDataText(string value)
         {
             Assert.AreEqual(true, value.Contains("a"));
             var claseHija = new ClaseHija("hola");
@@ -106,7 +109,7 @@ namespace TestProject
     {
         [TestMethod]
         //Implementa con MOQ el método de la interfaz
-        public void TestMetodo()
+        public void MethodTest()
         {
             var mock = new Mock<ITestMoqInterface>();
             mock.Setup(x => x.Metodo("hola")).Returns("hola");
@@ -122,7 +125,7 @@ namespace TestProject
 
         [TestMethod]
         //Implementa con MOQ el método de la interfaz
-        public void TestInyeccion()
+        public void InjectionTest()
         {
             var mock = new Mock<ITestMoqInterface>();
             mock.Setup(x => x.Metodo("metodo")).Returns("hola");
@@ -164,6 +167,26 @@ namespace TestProject
             password.Should().MatchRegex("[0-9]", "la contraseña debe tener al menos un numero");
             password.Should().MatchRegex("[^0-9a-zA-Z]", "la contraseña debe tener al menos un caracter especial");
             
+        }
+    }
+
+    [TestClass]
+    [TestCategory("Patterns")]
+    public class PatternChainOfResponibilityTest
+    {
+        [TestMethod]
+        public void CORBasic()
+        {
+            var contexto = new Context(new MockOfferService(), new MockArticleService(), new MockOrderService());
+            var pipeline = new Pipeline<Context, Context>()
+            .Add(new SyncArticles())
+            .Add(new SyncOffers())
+            .Add(new SyncOrders())
+            .Finally(context => context);
+
+            var response = pipeline.Execute(contexto);
+
+            Assert.IsNotNull(response);
         }
     }
 }

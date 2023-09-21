@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"Ebra.App.Android.dll",
 		"Ebra.App.dll",
 		"FormsViewGroup.dll",
+		"Tamarack.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

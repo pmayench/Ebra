@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6RP0uRa+Se0F8EgcEeCjizK1TbRMDlccO2Xw7CMr4wBqgUofgKt9fNfHjKYyKRX6tBODYQ2ICGujEQTb9NQIfw==",
+  "dgSpecHash": "qGo6EANe/wu7hnrH9Vt7skvlS83TeN/fAsz3miCx+Ka9ekzLiQ3QTyI23e/q3WuBjkTWPOJtiV/HV7LdpOPA5w==",
   "success": true,
   "projectFilePath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App.Android\\Ebra.App.Android.csproj",
   "expectedPackageFiles": [
     "D:\\NUGET_PACKAGES\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\tamarack.standard\\2.0.0\\tamarack.standard.2.0.0.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",

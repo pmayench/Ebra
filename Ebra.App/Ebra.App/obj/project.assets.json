@@ -39,6 +39,15 @@
           }
         }
       },
+      "Tamarack.Standard/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Tamarack.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tamarack.dll": {}
+        }
+      },
       "Xamarin.Essentials/1.7.0": {
         "type": "package",
         "dependencies": {
@@ -271,6 +280,18 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Tamarack.Standard/2.0.0": {
+      "sha512": "1Kdy1LNYLxereY+5xN8msMALgfLKMBzS8vanXrDJgOwWqBuDcbIlrNiXPsW93+DIAgOXnVn8yW15xhDUPY4ItA==",
+      "type": "package",
+      "path": "tamarack.standard/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Tamarack.dll",
+        "tamarack.standard.2.0.0.nupkg.sha512",
+        "tamarack.standard.nuspec"
       ]
     },
     "Xamarin.Essentials/1.7.0": {
@@ -535,6 +556,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
+      "Tamarack.Standard >= 2.0.0",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2196"
     ]
@@ -593,6 +615,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "Tamarack.Standard": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

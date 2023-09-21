@@ -1,7 +1,7 @@
-﻿using Ebra.App.Services.Interfaces;
+﻿using Ebra.App.Models;
+using Ebra.App.Services.Interfaces;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using TestProject.Modelo;
 
 namespace Ebra.App.Services
 {
@@ -16,6 +16,34 @@ namespace Ebra.App.Services
         {
 			var task = new Task<string>(() => "1.0");
 			return task;
+        }
+    }
+
+    public class MockOfferService : IOfferService
+    {
+        public Task<List<Offer>> GetOffersAsync()
+        {
+            return Task.Run(() => new List<Offer>() { new Offer() });
+        }
+
+        public Task<string> GetVersionAsync()
+        {
+            var task = new Task<string>(() => "1.0");
+            return task;
+        }
+    }
+
+    public class MockOrderService : IOrderService
+    {
+        public Task<List<Order>> GetOrdersAsync()
+        {
+            return Task.Run(() => new List<Order>());
+        }
+
+        public Task<string> GetVersionAsync()
+        {
+            var task = new Task<string>(() => "1.0");
+            return task;
         }
     }
 }

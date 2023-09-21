@@ -1,18 +1,9 @@
-﻿using Ebra.App.Models;
-using Ebra.App.ViewModels;
-using Ebra.App.Views;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ebra.App.ViewModels;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace Ebra.App.Views
 {
-	public partial class ItemsPage : ContentPage
+    public partial class ItemsPage : ContentPage
 	{
 		ItemsViewModel _viewModel;
 

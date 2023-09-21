@@ -16,10 +16,15 @@
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
+    <PackageReference Include="Tamarack.Standard" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Modelo\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ebra.App\Ebra.App\Ebra.App.csproj" />
   </ItemGroup>
 
 </Project>

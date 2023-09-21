@@ -1,12 +1,10 @@
-﻿using Ebra.App.ViewModels;
-using Ebra.App.Views;
+﻿using Ebra.App.Views;
 using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace Ebra.App
 {
-	public partial class AppShell : Xamarin.Forms.Shell
+    public partial class AppShell : Xamarin.Forms.Shell
 	{
 		public AppShell()
 		{
