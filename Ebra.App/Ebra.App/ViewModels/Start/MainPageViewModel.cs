@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Ebra.App.Repositories;
 
 namespace Ebra.App.ViewModels.Start
 {
@@ -37,21 +38,29 @@ namespace Ebra.App.ViewModels.Start
         async Task ExecuteSynchronizeCommand()
         {
             IsBusy = true;
+
             try
             {
-                var contexto = new Context(new MockOfferService(), new MockArticleService(), new MockOrderService());
+                Articles.Clear();
+                var contexto = new Context(new MockOfferService(), new MockArticleService(), new MockOrderService(), new MockRepositoryVersion(), new MockArticleRepository());
                 var pipeline = new Pipeline<Context, Context>()
                 .Add(new SyncArticles())
-                .Add(new SyncOffers())
-                .Add(new SyncOrders())
+                //.Add(new SyncOffers())
+                //.Add(new SyncOrders())
                 .Finally(context => context);
 
                 var response = pipeline.Execute(contexto);
+                //await Task.FromResult(response);
 
-                foreach (var article in response.Articles)
+                //var articlesService = new SyncArticles();
+                //articlesService.Execute(contexto, null);
+
+                foreach (var article in contexto.Articles)
                 {
                     Articles.Add(article);
                 }
+
+                //Articles.Add(new Article("description", "name", 1.5));
 
                 //Articles = new ObservableCollection<Article>(response.Articles);
                 //Orders = new ObservableCollection<Order>(response.Orders);
@@ -74,6 +83,7 @@ namespace Ebra.App.ViewModels.Start
 
             Articles = new ObservableCollection<Article>();
             SynchronizeCommand = new Command(async () => await ExecuteSynchronizeCommand());
+            ExecuteSynchronizeCommand();
         }
         #endregion
 
