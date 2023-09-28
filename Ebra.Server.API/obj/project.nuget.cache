@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "MUr/1pOHNWKOQVttMV1p3Doz4QwghnjOJFjKkYoJBPMcv5+Ov6xPtDW13EbpTVg315A3pQzqDxnkPehcMj0LdQ==",
+  "success": true,
+  "projectFilePath": "D:\\Pilotos\\PM\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj",
+  "expectedPackageFiles": [
+    "D:\\NUGET_PACKAGES\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

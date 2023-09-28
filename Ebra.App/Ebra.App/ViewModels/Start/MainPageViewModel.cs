@@ -7,11 +7,23 @@ using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Ebra.App.Repositories;
+using Ebra.App.Services.Interfaces;
+using Ebra.App.Factories;
 
 namespace Ebra.App.ViewModels.Start
 {
     public class MainPageViewModel : BaseViewModel
     {
+        #region Constructor
+        public MainPageViewModel()
+        {
+            Title = "Start";
+
+            Articles = new ObservableCollection<Article>();
+            SynchronizeCommand = new Command(async () => await ExecuteSynchronizeCommand());
+            ExecuteSynchronizeCommand();
+        }
+        #endregion
 
         #region Properties
         private Article _selectedArticle;
@@ -42,12 +54,8 @@ namespace Ebra.App.ViewModels.Start
             try
             {
                 Articles.Clear();
-                var contexto = new Context(new MockOfferService(), new MockArticleService(), new MockOrderService(), new MockRepositoryVersion(), new MockArticleRepository());
-                var pipeline = new Pipeline<Context, Context>()
-                .Add(new SyncArticles())
-                //.Add(new SyncOffers())
-                //.Add(new SyncOrders())
-                .Finally(context => context);
+                var contexto = new CreatorSyncroContext().FactoryMethod();
+                var pipeline = ChainOfResponsibilityFactory.CreateCORSyncro();
 
                 var response = pipeline.Execute(contexto);
                 //await Task.FromResult(response);
@@ -73,17 +81,6 @@ namespace Ebra.App.ViewModels.Start
             }
 
             finally { IsBusy = false; }
-        }
-        #endregion
-
-        #region Constructor
-        public MainPageViewModel()
-        {
-            Title = "Start";
-
-            Articles = new ObservableCollection<Article>();
-            SynchronizeCommand = new Command(async () => await ExecuteSynchronizeCommand());
-            ExecuteSynchronizeCommand();
         }
         #endregion
 

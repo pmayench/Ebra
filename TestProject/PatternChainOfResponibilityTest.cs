@@ -5,6 +5,7 @@ using Ebra.App.Repositories;
 using Ebra.App.Models;
 using Moq;
 using Ebra.App.Services.Interfaces;
+using Ebra.App.Factories;
 
 namespace TestProject
 {
@@ -15,8 +16,8 @@ namespace TestProject
         [TestMethod]
         public void CORBasic()
         {
-            var contexto = new Context(new MockOfferService(), new MockArticleService(), new MockOrderService(), new MockRepositoryVersion(), new MockArticleRepository());
-            var pipeline = new Pipeline<Context, Context>()
+            var contexto = new SyncroContext(new MockOfferService(), new MockArticleService(), new MockOrderService(), new MockRepositoryVersion(), new MockArticleRepository());
+            var pipeline = new Pipeline<ISyncroContext, ISyncroContext>()
             .Add(new SyncArticles())
             .Add(new SyncOffers())
             .Add(new SyncOrders())
@@ -46,7 +47,7 @@ namespace TestProject
             mockArticleService.Setup(x => x.GetVersion(typeof(Article))).Returns("1.0");
             
 
-            var context = new Context(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository());
+            var context = new SyncroContext(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository());
             var target = new SyncArticles();
             target.Execute(context, funcion);
 
@@ -72,7 +73,7 @@ namespace TestProject
 
             mockArticleService.Setup(x => x.GetArticles()).Returns(new List<Article>() { new Article("a", "b", 1.5)});
 
-            var context = new Context(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository());
+            var context = new SyncroContext(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository());
             var target = new SyncArticles();
             target.Execute(context, funcion);
 
@@ -83,7 +84,7 @@ namespace TestProject
 
         }
 
-        private Context funcion(Context c)
+        private ISyncroContext funcion(ISyncroContext c)
         { return c;
 
         }

@@ -1,15 +1,17 @@
 ﻿using Ebra.App.Exceptions;
+using Ebra.App.Factories;
 using Ebra.App.Models;
 using System;
 using System.Globalization;
+using System.Linq;
 using System.Threading.Tasks;
 using Tamarack.Pipeline;
 
 namespace Ebra.App.ViewModels.Start
 {
-    public class SyncArticles : IFilter<Context, Context>
+    public class SyncArticles : IFilter<ISyncroContext, ISyncroContext>
     {
-        public Context Execute(Context context, Func<Context, Context> executeNext)
+        public ISyncroContext Execute(ISyncroContext context, Func<ISyncroContext, ISyncroContext> executeNext)
         {
             string serviceVersion = null;
             try
@@ -17,7 +19,12 @@ namespace Ebra.App.ViewModels.Start
                 serviceVersion = context.ArticleService.GetVersion(typeof(Article));
                 var localVersion = context.VersionEntityRepository.GetByType(typeof(Article));
 
-                if(serviceVersion == localVersion.version) return executeNext(context);
+                if(serviceVersion == localVersion.version)
+                {
+                    context.Articles = context.ArticleRepository.GetAll().ToList();
+
+                    return executeNext(context);
+                }
 
                 populateArticles(context, serviceVersion);
 
@@ -33,10 +40,11 @@ namespace Ebra.App.ViewModels.Start
             return executeNext(context);
         }
 
-        private void populateArticles(Context context, string serviceVersion)
+        private void populateArticles(ISyncroContext context, string serviceVersion)
         {
             callService(context);
             context.ArticleRepository.DeleteAll();
+
             context.ArticleRepository.AddRange(context.Articles);
             context.VersionEntityRepository.Insert(new VersionEntity
             {
@@ -45,22 +53,7 @@ namespace Ebra.App.ViewModels.Start
             });
         }
 
-        private void callService(Context context)
-        {
-            context.Articles = context.ArticleService.GetArticles();
-        }
-    }
-
-    public class SyncVersions : IFilter<Context, Context>
-    {
-        public Context Execute(Context context, Func<Context, Context> executeNext)
-        {
-            callService(context);
-
-            return executeNext(context);
-        }
-
-        private void callService(Context context)
+        private void callService(ISyncroContext context)
         {
             context.Articles = context.ArticleService.GetArticles();
         }

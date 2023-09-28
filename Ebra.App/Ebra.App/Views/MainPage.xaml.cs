@@ -1,4 +1,5 @@
-﻿using Ebra.App.ViewModels.Start;
+﻿using Ebra.App.Repositories;
+using Ebra.App.ViewModels.Start;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
