@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "S7WK7q3bsu5a0IN/m72GFgzoO5bdW7pFx7EwrBOhmTWZ5sPSnAnUAmYaxVlnw+SEHn2N5+mh+gzxb5gMXcz8mg==",
+  "dgSpecHash": "lcJvzv/I6xhAIQtodpBmnmboNocyhQ37tAMnLcRVca0bOxrwinU7CQrbxgdMTRD7hJ0mSgGUG0ItPxUH9DrK+g==",
   "success": true,
-  "projectFilePath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
+  "projectFilePath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
   "expectedPackageFiles": [
-    "D:\\NUGET_PACKAGES\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "D:\\NUGET_PACKAGES\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "D:\\NUGET_PACKAGES\\tamarack.standard\\2.0.0\\tamarack.standard.2.0.0.nupkg.sha512",
-    "D:\\NUGET_PACKAGES\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "D:\\NUGET_PACKAGES\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\tamarack.standard\\2.0.0\\tamarack.standard.2.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }

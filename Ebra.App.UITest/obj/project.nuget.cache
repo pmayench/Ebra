@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2neaqv9Cg085vryjKkyO3bULmBBihm2cnKPKkR/dFaetYE3b2Pa/xeDqOLUAjEei4MOiTQ/huwIlttQlMPJQkg==",
+  "dgSpecHash": "qL3obnSC0x+zao42S0833agNfCAHTaGQ6aX5ZvZFjUGX7Aesg+kZq+HggaFXZcyE6J7TqgB2GwApatrXDFWQxg==",
   "success": true,
-  "projectFilePath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App.UITest\\Ebra.App.UITest.csproj",
+  "projectFilePath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App.UITest\\Ebra.App.UITest.csproj",
   "expectedPackageFiles": [
-    "D:\\NUGET_PACKAGES\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
-    "D:\\NUGET_PACKAGES\\nunit3testadapter\\3.13.0\\nunit3testadapter.3.13.0.nupkg.sha512",
-    "D:\\NUGET_PACKAGES\\xamarin.uitest\\3.2.2\\xamarin.uitest.3.2.2.nupkg.sha512"
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\nunit3testadapter\\3.13.0\\nunit3testadapter.3.13.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\xamarin.uitest\\3.2.2\\xamarin.uitest.3.2.2.nupkg.sha512"
   ],
   "logs": []
 }
