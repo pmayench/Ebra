@@ -64,3 +64,5 @@ C:\Programacio\Projectes\pmayench\Ebra\Ebra.Server.API\obj\Debug\net7.0\refint\E
 C:\Programacio\Projectes\pmayench\Ebra\Ebra.Server.API\obj\Debug\net7.0\Ebra.Server.API.pdb
 C:\Programacio\Projectes\pmayench\Ebra\Ebra.Server.API\obj\Debug\net7.0\Ebra.Server.API.genruntimeconfig.cache
 C:\Programacio\Projectes\pmayench\Ebra\Ebra.Server.API\obj\Debug\net7.0\ref\Ebra.Server.API.dll
+C:\Programacio\Projectes\pmayench\Ebra\Ebra.Server.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Programacio\Projectes\pmayench\Ebra\Ebra.Server.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

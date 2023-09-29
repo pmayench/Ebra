@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "lcJvzv/I6xhAIQtodpBmnmboNocyhQ37tAMnLcRVca0bOxrwinU7CQrbxgdMTRD7hJ0mSgGUG0ItPxUH9DrK+g==",
+  "dgSpecHash": "m6r0c7+NY6auXPknzPoMiYvxLWhV2TXkZHvkC50bW/gZ1eTBs8GpgffnH+cy11y81Ey3lKV3QzY2925g0HwvyQ==",
   "success": true,
   "projectFilePath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\tamarack.standard\\2.0.0\\tamarack.standard.2.0.0.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
