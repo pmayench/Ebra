@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Ebra.Server.API.props" />
+</Project>

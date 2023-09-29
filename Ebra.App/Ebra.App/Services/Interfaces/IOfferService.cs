@@ -11,5 +11,4 @@ namespace Ebra.App.Services.Interfaces
         //obtener ofertas
         Task<List<Offer>> GetOffersAsync();
     }
-
 }

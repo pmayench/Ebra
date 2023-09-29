@@ -1,4 +1,6 @@
-﻿using Ebra.App.Services;
+﻿using Ebra.App.Repositories;
+using Ebra.App.Services;
+using Ebra.App.Services.Interfaces;
 using Ebra.App.Views;
 using System;
 using Xamarin.Forms;
@@ -14,7 +16,12 @@ namespace Ebra.App
 			InitializeComponent();
 
 			DependencyService.Register<MockDataStore>();
-			MainPage = new AppShell();
+			DependencyService.Register<IArticleRepository, MockArticleRepository>();
+            DependencyService.Register<IVersionEntityRepository, MockRepositoryVersion>();
+            DependencyService.Register<IOfferService,MockOfferService>();
+            DependencyService.Register<IArticleService, MockArticleService>();
+            DependencyService.Register<IOrderService, MockOrderService>();
+            MainPage = new AppShell();
 		}
 
 		protected override void OnStart()

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kzY3ufjzN71Vv6jGXtA/Al8ohg8HaBS2fcGOvf6yny8=",
+  "Source": "Ebra.Server.API",
+  "BasePath": "_content/Ebra.Server.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

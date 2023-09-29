@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ebra.App.Android", "Ebra.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ebra.App.UITest", "Ebra.App.UITest\Ebra.App.UITest.csproj", "{D0D0F66E-E241-4082-8852-15E0C417631F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ebra.Server.API", "Ebra.Server.API\Ebra.Server.API.csproj", "{3AE2E53C-FCC6-4C60-ABC7-25140337357B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{D0D0F66E-E241-4082-8852-15E0C417631F}.Release|iPhone.Build.0 = Release|Any CPU
 		{D0D0F66E-E241-4082-8852-15E0C417631F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{D0D0F66E-E241-4082-8852-15E0C417631F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Release|iPhone.Build.0 = Release|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{3AE2E53C-FCC6-4C60-ABC7-25140337357B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,11 +6,24 @@ using System.Diagnostics;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Ebra.App.Repositories;
+using Ebra.App.Services.Interfaces;
+using Ebra.App.Factories;
 
 namespace Ebra.App.ViewModels.Start
 {
     public class MainPageViewModel : BaseViewModel
     {
+        #region Constructor
+        public MainPageViewModel()
+        {
+            Title = "Start";
+
+            Articles = new ObservableCollection<Article>();
+            SynchronizeCommand = new Command(async () => await ExecuteSynchronizeCommand());
+            ExecuteSynchronizeCommand();
+        }
+        #endregion
 
         #region Properties
         private Article _selectedArticle;
@@ -37,21 +50,25 @@ namespace Ebra.App.ViewModels.Start
         async Task ExecuteSynchronizeCommand()
         {
             IsBusy = true;
+
             try
             {
-                var contexto = new Context(new MockOfferService(), new MockArticleService(), new MockOrderService());
-                var pipeline = new Pipeline<Context, Context>()
-                .Add(new SyncArticles())
-                .Add(new SyncOffers())
-                .Add(new SyncOrders())
-                .Finally(context => context);
+                Articles.Clear();
+                var contexto = new CreatorSyncroContext().FactoryMethod();
+                var pipeline = ChainOfResponsibilityFactory.CreateCORSyncro();
 
                 var response = pipeline.Execute(contexto);
+                //await Task.FromResult(response);
 
-                foreach (var article in response.Articles)
+                //var articlesService = new SyncArticles();
+                //articlesService.Execute(contexto, null);
+
+                foreach (var article in contexto.Articles)
                 {
                     Articles.Add(article);
                 }
+
+                //Articles.Add(new Article("description", "name", 1.5));
 
                 //Articles = new ObservableCollection<Article>(response.Articles);
                 //Orders = new ObservableCollection<Order>(response.Orders);
@@ -64,16 +81,6 @@ namespace Ebra.App.ViewModels.Start
             }
 
             finally { IsBusy = false; }
-        }
-        #endregion
-
-        #region Constructor
-        public MainPageViewModel()
-        {
-            Title = "Start";
-
-            Articles = new ObservableCollection<Article>();
-            SynchronizeCommand = new Command(async () => await ExecuteSynchronizeCommand());
         }
         #endregion
 
