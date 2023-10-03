@@ -19,7 +19,7 @@ namespace Ebra.App
 			DependencyService.Register<IArticleRepository, MockArticleRepository>();
             DependencyService.Register<IVersionEntityRepository, MockRepositoryVersion>();
             DependencyService.Register<IOfferService,MockOfferService>();
-            DependencyService.Register<IArticleService, MockArticleService>();
+            DependencyService.Register<IArticleService, ArticleService>();
             DependencyService.Register<IOrderService, MockOrderService>();
             MainPage = new AppShell();
 		}

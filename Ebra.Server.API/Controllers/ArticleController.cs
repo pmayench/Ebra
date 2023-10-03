@@ -18,11 +18,17 @@ namespace Ebra.Server.API.Controllers
             _mapper = mapper;
         }
 
-        [HttpGet(Name = "GetArticles")]
-        public IEnumerable<ArticleDTO> Get()
+        [HttpGet("GetArticles")]
+        public IEnumerable<ArticleDTO> GetArticles()
         {
             Article[] result = Enumerable.Range(1,4).Select(index => new Article("provider", "description", "name", 1.5)).ToArray();
             return _mapper.Map<IEnumerable<Article>, IEnumerable<ArticleDTO>>(result);
+        }
+
+        [HttpGet("GetVersion")]
+        public string GetVersion()
+        {
+            return "1.0";
         }
     }
 }
