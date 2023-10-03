@@ -14,18 +14,20 @@ namespace Ebra.App.ViewModels.Start
         public IVersionEntityRepository VersionEntityRepository { get;  set; }
         public IArticleRepository ArticleRepository { get;  set; }
 
-        public SyncroContext(IOfferService offerService, IArticleService articleService, IOrderService orderService, IVersionEntityRepository versionEntityRepository, IArticleRepository articleRepository)
+        public SyncroContext(IOfferService offerService, IArticleService articleService, IOrderService orderService, IVersionEntityRepository versionEntityRepository, IArticleRepository articleRepository, IGenericRepository<Article> genericRepository)
         {
             OfferService = offerService;
             ArticleService = articleService;
             OrderService = orderService;
             VersionEntityRepository = versionEntityRepository;
             ArticleRepository = articleRepository;
+            GenericRepository = genericRepository;
         }
 
         public List<Order> Orders { get; set; }
         public IArticleService ArticleService { get;  set; }
         public IOrderService OrderService { get;  set; }
+        public IGenericRepository<Article> GenericRepository { get; set; }
 
         internal int Save(SyncroContext p)
         {

@@ -7,6 +7,7 @@ namespace Ebra.App.Factories
 {
     public interface ISyncroContext
     {
+        IGenericRepository<Article> GenericRepository { get; set; }
         IArticleRepository ArticleRepository { get; set; }
         List<Article> Articles { get; set; }
         IArticleService ArticleService { get; set; }

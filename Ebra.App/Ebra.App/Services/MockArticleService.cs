@@ -26,7 +26,7 @@ namespace Ebra.App.Services
 
         public Task<string> GetVersionAsync(Type type)
         {
-            var task = new Task<string>(() => "1.0");
+            var task = new Task<string>(() => "2.0");
             return task;
         }
     }

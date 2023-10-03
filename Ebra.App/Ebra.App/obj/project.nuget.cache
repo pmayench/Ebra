@@ -1,12 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "m6r0c7+NY6auXPknzPoMiYvxLWhV2TXkZHvkC50bW/gZ1eTBs8GpgffnH+cy11y81Ey3lKV3QzY2925g0HwvyQ==",
+  "dgSpecHash": "x202K7FClsslsPgcAzIQMxQ0Mcc6R3RAgMTBvgJb4yrU9eCMqsCc1FLMHpPEPPkyoAkui5VAdTmaDAYkEIpuWg==",
   "success": true,
   "projectFilePath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

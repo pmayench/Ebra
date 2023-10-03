@@ -13,5 +13,7 @@
             this.name = name;
             this.price = price;
         }
+        
+        public Article() { }
     }
 }

@@ -1,7 +1,12 @@
-﻿namespace Ebra.App.Models
+﻿using SQLite;
+
+namespace Ebra.App.Models
 {
-    public abstract class EntityBase
+    public class EntityBase
     {
+        [PrimaryKey, AutoIncrement]
         public int id { get; set; }
+
+        public EntityBase() { }
     }
 }

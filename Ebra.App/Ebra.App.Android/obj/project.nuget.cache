@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "S0il4jO8EAIvi2c0Ydemy+9KWVaqA2/ytd2AeOH0JRxcGyhzWGr3OIyeQ+cDIVHyxmYhjSbMcnMJeb1Zby+Kqg==",
+  "dgSpecHash": "bNpOMt6YVnfKEA9fxFVzRG6obeG8UzfcL2lVcriQLqiR1dBj1fuW6FIgRqFF/SGG+AbCTR5nu7+mMQ+r2rEIDA==",
   "success": true,
   "projectFilePath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App.Android\\Ebra.App.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.4\\sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

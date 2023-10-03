@@ -43,9 +43,9 @@ namespace Ebra.App.ViewModels.Start
         private void populateArticles(ISyncroContext context, string serviceVersion)
         {
             callService(context);
-            context.ArticleRepository.DeleteAll();
+            context.GenericRepository.DeleteAll();
 
-            context.ArticleRepository.AddRange(context.Articles);
+            context.GenericRepository.AddRange(context.Articles);
             context.VersionEntityRepository.Insert(new VersionEntity
             {
                 type = typeof(Article),
@@ -57,5 +57,18 @@ namespace Ebra.App.ViewModels.Start
         {
             context.Articles = context.ArticleService.GetArticles();
         }
+
+        //private void populateArticles(ISyncroContext context, string serviceVersion)
+        //{
+        //    callService(context);
+        //    context.ArticleRepository.DeleteAll();
+
+        //    context.ArticleRepository.AddRange(context.Articles);
+        //    context.VersionEntityRepository.Insert(new VersionEntity
+        //    {
+        //        type = typeof(Article),
+        //        version = serviceVersion
+        //    });
+        //}
     }
 }
