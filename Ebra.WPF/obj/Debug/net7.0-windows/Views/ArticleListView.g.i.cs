@@ -53,7 +53,7 @@ namespace Ebra.WPF.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Ebra.WPF;component/views/articlelistview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Ebra.WPF;V1.0.0.0;component/views/articlelistview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ArticleListView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

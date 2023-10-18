@@ -1,10 +1,9 @@
 ﻿using Tamarack.Pipeline;
-using Ebra.App.Services;
+using Ebra.Models.Services;
 using Ebra.App.ViewModels.Start;
 using Ebra.Models.Interfaces;
 using Ebra.Models.Models;
 using Moq;
-using Ebra.App.Services.Interfaces;
 using Ebra.App.Factories;
 
 namespace TestProject

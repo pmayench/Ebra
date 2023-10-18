@@ -1,13 +1,9 @@
-﻿using Tamarack.Pipeline;
-using Ebra.App.Services;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using Ebra.Models.Models;
 using System.Diagnostics;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Ebra.App.Repositories;
-using Ebra.App.Services.Interfaces;
 using Ebra.App.Factories;
 
 namespace Ebra.App.ViewModels.Start

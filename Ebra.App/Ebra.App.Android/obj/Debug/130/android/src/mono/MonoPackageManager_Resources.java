@@ -7,6 +7,7 @@ public class MonoPackageManager_Resources {
 		"Ebra.App.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",
+		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

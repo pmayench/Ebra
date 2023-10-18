@@ -1,8 +1,7 @@
 ﻿using Ebra.Models.Models;
-using Ebra.App.Services;
-using Ebra.App.Services.Interfaces;
 using Xamarin.Forms;
 using Ebra.Models.Interfaces;
+using Ebra.Models.Services;
 
 namespace Ebra.App
 {
@@ -20,7 +19,7 @@ namespace Ebra.App
             //DependencyService.Register<IArticleRepository, ArticleRepository>();
 
             DependencyService.Register<IVersionEntityRepository, MockRepositoryVersion>();
-            DependencyService.Register<IOfferService,MockOfferService>();
+            DependencyService.Register<IOfferService, MockOfferService>();
             DependencyService.Register<IArticleService, MockArticleService>();
             DependencyService.Register<IOrderService, MockOrderService>();
             MainPage = new AppShell();

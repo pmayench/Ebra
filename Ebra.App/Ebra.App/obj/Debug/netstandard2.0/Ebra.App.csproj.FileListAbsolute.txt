@@ -84,12 +84,6 @@ C:\Programacio\Projectes\pmayench\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.
 C:\Programacio\Projectes\pmayench\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.pdb
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.csproj.AssemblyReference.cache
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.GeneratedMSBuildEditorConfig.editorconfig
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.App.deps.json
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.App.dll
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\ref\Ebra.App.dll
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.App.pdb
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.Models.dll
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.Models.pdb
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -101,6 +95,12 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Views\NewIte
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.AssemblyInfoInputs.cache
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.AssemblyInfo.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.csproj.CoreCompileInputs.cache
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.App.deps.json
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.App.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\ref\Ebra.App.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.App.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.Models.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\bin\Debug\netstandard2.0\Ebra.Models.pdb
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.csproj.CopyComplete
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.App\Ebra.App\obj\Debug\netstandard2.0\Ebra.App.dll

@@ -1,5 +1,5 @@
-﻿using Ebra.Models.Models;
-using Ebra.App.Services.Interfaces;
+﻿using Ebra.Models.Interfaces;
+using Ebra.Models.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
