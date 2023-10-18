@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ebra.App.Views.ItemsPage"
              Title="{Binding Title}"
-             xmlns:local="clr-namespace:Ebra.App.ViewModels" 
-             xmlns:model="clr-namespace:Ebra.Models.Models;assembly=Ebra.Models"
+             xmlns:local="clr-namespace:Ebra.App.ViewModels"  
+             xmlns:model="clr-namespace:Ebra.App.Models"  
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>

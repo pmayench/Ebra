@@ -1963,7 +1963,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Ebra.Models": "1.0.0",
           "System.Text.Json": "7.0.3",
           "Tamarack.Standard": "2.0.0",
           "Xamarin.Essentials": "1.7.0",
@@ -1975,16 +1974,6 @@
         },
         "runtime": {
           "bin/placeholder/Ebra.App.dll": {}
-        }
-      },
-      "Ebra.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Ebra.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Ebra.Models.dll": {}
         }
       }
     }
@@ -3918,11 +3907,6 @@
       "type": "project",
       "path": "../Ebra.App/Ebra.App.csproj",
       "msbuildProject": "../Ebra.App/Ebra.App.csproj"
-    },
-    "Ebra.Models/1.0.0": {
-      "type": "project",
-      "path": "../../Ebra.Model/Ebra.Models.csproj",
-      "msbuildProject": "../../Ebra.Model/Ebra.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3934,24 +3918,24 @@
     ]
   },
   "packageFolders": {
-    "D:\\NUGET_PACKAGES": {},
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App.Android\\Ebra.App.Android.csproj",
+      "projectUniqueName": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App.Android\\Ebra.App.Android.csproj",
       "projectName": "Ebra.App.Android",
-      "projectPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App.Android\\Ebra.App.Android.csproj",
-      "packagesPath": "D:\\NUGET_PACKAGES",
-      "outputPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App.Android\\obj\\",
+      "projectPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App.Android\\Ebra.App.Android.csproj",
+      "packagesPath": "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\",
+      "outputPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sibanez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3960,15 +3944,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 2.27.0\\": {},
-        "E:\\nugetpkdebug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj": {
-              "projectPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj"
+            "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj": {
+              "projectPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj"
             }
           }
         }

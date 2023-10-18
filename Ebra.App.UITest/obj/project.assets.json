@@ -81,46 +81,6 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win-arm64": {
-      "NUnit/3.12.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/nunit.framework.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/nunit.framework.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
-      "NUnit3TestAdapter/3.13.0": {
-        "type": "package",
-        "build": {
-          "build/net35/NUnit3TestAdapter.props": {}
-        }
-      },
-      "Xamarin.UITest/3.2.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Xamarin.UITest.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Xamarin.UITest.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/Xamarin.UITest.props": {}
-        }
-      }
-    },
     ".NETFramework,Version=v4.8/win-x64": {
       "NUnit/3.12.0": {
         "type": "package",
@@ -283,24 +243,24 @@
     ]
   },
   "packageFolders": {
-    "D:\\NUGET_PACKAGES": {},
+    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Pilotos\\PM\\Ebra\\Ebra.App.UITest\\Ebra.App.UITest.csproj",
+      "projectUniqueName": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App.UITest\\Ebra.App.UITest.csproj",
       "projectName": "Ebra.App.UITest",
-      "projectPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App.UITest\\Ebra.App.UITest.csproj",
-      "packagesPath": "D:\\NUGET_PACKAGES",
-      "outputPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App.UITest\\obj\\",
+      "projectPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App.UITest\\Ebra.App.UITest.csproj",
+      "packagesPath": "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\",
+      "outputPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App.UITest\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sibanez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -309,8 +269,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 2.27.0\\": {},
-        "E:\\nugetpkdebug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -339,9 +297,6 @@
     },
     "runtimes": {
       "win": {
-        "#import": []
-      },
-      "win-arm64": {
         "#import": []
       },
       "win-x64": {
