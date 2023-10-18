@@ -1963,7 +1963,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Ebra.Models": "1.0.0",
           "System.Text.Json": "7.0.3",
           "Tamarack.Standard": "2.0.0",
           "Xamarin.Essentials": "1.7.0",
@@ -1975,16 +1974,6 @@
         },
         "runtime": {
           "bin/placeholder/Ebra.App.dll": {}
-        }
-      },
-      "Ebra.Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Ebra.Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Ebra.Models.dll": {}
         }
       }
     }
@@ -3918,11 +3907,6 @@
       "type": "project",
       "path": "../Ebra.App/Ebra.App.csproj",
       "msbuildProject": "../Ebra.App/Ebra.App.csproj"
-    },
-    "Ebra.Models/1.0.0": {
-      "type": "project",
-      "path": "../../Ebra.Model/Ebra.Models.csproj",
-      "msbuildProject": "../../Ebra.Model/Ebra.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {

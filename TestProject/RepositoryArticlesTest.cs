@@ -1,6 +1,6 @@
 ﻿using Ebra.App.Exceptions;
+using Ebra.App.Models;
 using Ebra.App.Repositories;
-using Ebra.Models.Models;
 
 namespace TestProject
 {
