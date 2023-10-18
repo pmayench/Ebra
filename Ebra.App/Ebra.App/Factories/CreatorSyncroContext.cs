@@ -1,4 +1,4 @@
-﻿using Ebra.App.Models;
+﻿using Ebra.Models.Models;
 using Ebra.App.Repositories;
 using Ebra.App.Services.Interfaces;
 using Ebra.App.ViewModels.Start;
@@ -17,7 +17,7 @@ namespace Ebra.App.Factories
             var _articleRepository = DependencyService.Get<IArticleRepository>();
             var _genericRepository = DependencyService.Get < IGenericRepository<Article>>();
 
-            return new SyncroContext(_offerService, _articleService, _orderService, _versionEntityRepository, _articleRepository, _genericRepository);
+            return new SyncroContexto(_offerService, _articleService, _orderService, _versionEntityRepository, _articleRepository, _genericRepository);
         }
     }
 }

@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Ebra.App.Android.dll" comes first in this list. */
 		"Ebra.App.Android.dll",
+		"Ebra.Models.dll",
 		"Ebra.App.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Bcl.AsyncInterfaces.dll",

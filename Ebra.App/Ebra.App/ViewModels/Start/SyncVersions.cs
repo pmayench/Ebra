@@ -3,16 +3,16 @@ using Tamarack.Pipeline;
 
 namespace Ebra.App.ViewModels.Start
 {
-    public class SyncVersions : IFilter<SyncroContext, SyncroContext>
+    public class SyncVersions : IFilter<SyncroContexto, SyncroContexto>
     {
-        public SyncroContext Execute(SyncroContext context, Func<SyncroContext, SyncroContext> executeNext)
+        public SyncroContexto Execute(SyncroContexto context, Func<SyncroContexto, SyncroContexto> executeNext)
         {
             callService(context);
 
             return executeNext(context);
         }
 
-        private void callService(SyncroContext context)
+        private void callService(SyncroContexto context)
         {
             context.Articles = context.ArticleService.GetArticles();
         }

@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj": {}
+    "D:\\Pilotos\\PM\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj": {}
   },
   "projects": {
-    "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj": {
+    "D:\\Pilotos\\PM\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj",
+        "projectUniqueName": "D:\\Pilotos\\PM\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj",
         "projectName": "Ebra.Server.API",
-        "projectPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj",
-        "packagesPath": "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.Server.API\\obj\\",
+        "projectPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.Server.API\\Ebra.Server.API.csproj",
+        "packagesPath": "D:\\NUGET_PACKAGES",
+        "outputPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.Server.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sibanez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +27,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 2.27.0\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
+          "E:\\nugetpkdebug": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -85,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 ﻿using Ebra.App.Exceptions;
 using Ebra.App.Factories;
-using Ebra.App.Models;
+using Ebra.Models.Models;
 using System;
 using System.Globalization;
 using System.Linq;

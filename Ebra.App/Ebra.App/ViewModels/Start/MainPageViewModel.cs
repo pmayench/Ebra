@@ -1,7 +1,6 @@
 ﻿using Tamarack.Pipeline;
 using Ebra.App.Services;
 using System.Collections.ObjectModel;
-using Ebra.App.Models;
 using System.Diagnostics;
 using System;
 using System.Threading.Tasks;
@@ -9,6 +8,7 @@ using Xamarin.Forms;
 using Ebra.App.Repositories;
 using Ebra.App.Services.Interfaces;
 using Ebra.App.Factories;
+using Ebra.Models.Models;
 
 namespace Ebra.App.ViewModels.Start
 {
@@ -76,7 +76,7 @@ namespace Ebra.App.ViewModels.Start
             }
             catch (Exception ex)
             {
-
+                throw ex;
                 Debug.WriteLine(ex);
             }
 

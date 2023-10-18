@@ -324,6 +324,16 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "Ebra.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Ebra.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ebra.Models.dll": {}
+        }
       }
     }
   },
@@ -1117,10 +1127,16 @@
         "xamarin.forms.5.0.0.2196.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Ebra.Models/1.0.0": {
+      "type": "project",
+      "path": "../../Ebra.Model/Ebra.Models.csproj",
+      "msbuildProject": "../../Ebra.Model/Ebra.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Ebra.Models >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "System.Text.Json >= 7.0.3",
       "Tamarack.Standard >= 2.0.0",
@@ -1130,23 +1146,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "D:\\NUGET_PACKAGES": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
+      "projectUniqueName": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
       "projectName": "Ebra.App",
-      "projectPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
-      "packagesPath": "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\.nuget\\packages\\",
-      "outputPath": "C:\\Programacio\\Projectes\\pmayench\\Ebra\\Ebra.App\\Ebra.App\\obj\\",
+      "projectPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\Ebra.App.csproj",
+      "packagesPath": "D:\\NUGET_PACKAGES",
+      "outputPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.App\\Ebra.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario.DESKTOP-NLDOJUC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sibanez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1155,13 +1173,19 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Progress\\Telerik UI for Blazor 2.27.0\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "E:\\nugetpkdebug": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Pilotos\\PM\\Ebra\\Ebra.Model\\Ebra.Models.csproj": {
+              "projectPath": "D:\\Pilotos\\PM\\Ebra\\Ebra.Model\\Ebra.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1212,7 +1236,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

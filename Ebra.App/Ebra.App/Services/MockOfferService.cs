@@ -1,5 +1,5 @@
-﻿using Ebra.App.Models;
-using Ebra.App.Services.Interfaces;
+﻿using Ebra.App.Services.Interfaces;
+using Ebra.Models.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

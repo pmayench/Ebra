@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Ebra.App/1.0.0": {
         "dependencies": {
+          "Ebra.Models": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "System.Text.Json": "7.0.3",
           "Tamarack.Standard": "2.0.0",
@@ -196,6 +197,11 @@
             "fileVersion": "5.0.0.786"
           }
         }
+      },
+      "Ebra.Models/1.0.0": {
+        "runtime": {
+          "Ebra.Models.dll": {}
+        }
       }
     }
   },
@@ -330,6 +336,11 @@
       "sha512": "sha512-zSXDiZukojtEBmZKUUG1yYBwlB9tI8JLPkc6n+Sm1PAX01QyzErWE9AaFJgP7usyoGHn92l4HnQF7A+/MPI6VA==",
       "path": "xamarin.forms/5.0.0.2196",
       "hashPath": "xamarin.forms.5.0.0.2196.nupkg.sha512"
+    },
+    "Ebra.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
