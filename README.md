@@ -2,15 +2,60 @@
    <img src="https://github.com/dotnet-architecture/eShopOnContainers/raw/dev/img/eshop_logo.png" alt="eShop logo" title="eShopOnContainers" align="right" height="60" />
 </a>
 
-# .NET Xamarin Application
+# .NET Solution Ebra
 
 Practice Xamarin Application, with clean code and SOLID principles.
 Declaración de intenciones ()
 Sample .NET Core reference application, powered by Microsoft, based on a simplified microservices architecture and Docker containers.
 
-## Estructura del proyecto
+La solución Ebra está enfocada en aplicar todos los conceptos SOLID de manera práctica, así como aplicar también todas las buenas prácticas de código limpio
+
+## Estructura de la solución
 Explicar qué proyectos hay y para qué, cuál es la estructura interna de cada proyecto (Test, Android, Cliente) + carpetas
+
+$ ./tree-md
+# Ebra
+ * [Clientes](./dir2)
+   * [Xamarin](./dir2/file21.ext)
+   * [WPF](./dir2/file22.ext)
+   * [Shared](./dir2/file23.ext)
+        * [Models](./dir2/file23.ext)
+ * [Server](./dir1)
+   * [Web API](./dir1/file11.ext)
+   * [STS](./dir1/file12.ext)
+        * [Shared](./dir2/file23.ext)
+ * [Test](./file_in_root.ext)
+      * [Unit Test](./dir2/file23.ext)
+      * [Integration Test](./dir2/file23.ext)
+      * [Test Cases](./dir2/file23.ext)
+ * [README.md](./README.md)
+
+   
 ![](img/eshop-spa-app-home.png)
+
+
+## WPF Client
+Used libraries
+   Prism: 
+      Inyección de dependencias
+      Regiones
+      MVVM
+
+## Xamarin Client
+Used libraries
+   Tamarack: 
+      Chain of Responsiblity
+   SQLite:
+      BBDD
+      Repositories
+
+Used patterns
+   Creational patterns:
+      Builder 
+      Factory Method
+      MVVM
+      Repository
+      Chain of Responsiblity
 
 ## Patrones utilizados
 Cadena de responsabilidades, FactoryMethod, Factory abstract, MVVM, Repository
