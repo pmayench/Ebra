@@ -1,8 +1,8 @@
-﻿using Ebra.App.Models;
-using Ebra.App.Repositories;
+﻿using Ebra.Models.Models;
 using Ebra.App.Services.Interfaces;
 using Ebra.App.ViewModels.Start;
 using Xamarin.Forms;
+using Ebra.Models.Interfaces;
 
 namespace Ebra.App.Factories
 {

@@ -1,4 +1,4 @@
-﻿using Ebra.App.Models;
+﻿using Ebra.Models.Models;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;

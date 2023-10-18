@@ -1,7 +1,7 @@
-﻿using Ebra.App.Models;
-using Ebra.App.Repositories;
+﻿using Ebra.Models.Models;
 using Ebra.App.Services.Interfaces;
 using System.Collections.Generic;
+using Ebra.Models.Interfaces;
 
 namespace Ebra.App.Factories
 {

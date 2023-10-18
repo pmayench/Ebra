@@ -1,4 +1,4 @@
-﻿using Ebra.App.Models;
+﻿using Ebra.Models.Models;
 using Ebra.App.ViewModels;
 using System;
 using System.Collections.Generic;

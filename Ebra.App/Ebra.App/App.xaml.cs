@@ -1,15 +1,12 @@
-﻿using Ebra.App.Models;
-using Ebra.App.Repositories;
+﻿using Ebra.Models.Models;
 using Ebra.App.Services;
 using Ebra.App.Services.Interfaces;
-using Ebra.App.Views;
-using System;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+using Ebra.Models.Interfaces;
 
 namespace Ebra.App
 {
-	public partial class App : Application
+    public partial class App : Application
 	{
 
 		public App()

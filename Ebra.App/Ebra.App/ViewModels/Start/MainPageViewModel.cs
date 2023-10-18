@@ -1,7 +1,7 @@
 ﻿using Tamarack.Pipeline;
 using Ebra.App.Services;
 using System.Collections.ObjectModel;
-using Ebra.App.Models;
+using Ebra.Models.Models;
 using System.Diagnostics;
 using System;
 using System.Threading.Tasks;

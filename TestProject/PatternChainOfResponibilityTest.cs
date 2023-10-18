@@ -1,8 +1,8 @@
 ﻿using Tamarack.Pipeline;
 using Ebra.App.Services;
 using Ebra.App.ViewModels.Start;
-using Ebra.App.Repositories;
-using Ebra.App.Models;
+using Ebra.Models.Interfaces;
+using Ebra.Models.Models;
 using Moq;
 using Ebra.App.Services.Interfaces;
 using Ebra.App.Factories;
@@ -16,7 +16,7 @@ namespace TestProject
         [TestMethod]
         public void CORBasic()
         {
-            var contexto = new SyncroContext(new MockOfferService(), new MockArticleService(), new MockOrderService(), new MockRepositoryVersion(), new MockArticleRepository());
+            var contexto = new SyncroContext(new MockOfferService(), new MockArticleService(), new MockOrderService(), new MockRepositoryVersion(), new MockArticleRepository(), null);
             var pipeline = new Pipeline<ISyncroContext, ISyncroContext>()
             .Add(new SyncArticles())
             .Add(new SyncOffers())
@@ -47,7 +47,7 @@ namespace TestProject
             mockArticleService.Setup(x => x.GetVersion(typeof(Article))).Returns("1.0");
             
 
-            var context = new SyncroContext(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository());
+            var context = new SyncroContext(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository(), null);
             var target = new SyncArticles();
             target.Execute(context, funcion);
 
@@ -73,7 +73,7 @@ namespace TestProject
 
             mockArticleService.Setup(x => x.GetArticles()).Returns(new List<Article>() { new Article("a", "b", 1.5)});
 
-            var context = new SyncroContext(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository());
+            var context = new SyncroContext(new MockOfferService(), mockArticleService.Object, new MockOrderService(), mockRepositoryVersion, new MockArticleRepository(), null);
             var target = new SyncArticles();
             target.Execute(context, funcion);
 

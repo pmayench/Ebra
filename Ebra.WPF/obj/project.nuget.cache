@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "9OZdn4OprU5fz7rlEmgqF2O3exuk77cJg8QREg6FU8iIJBEfubugQwW3frNBy7pHto3+72mhyRdxrI+JuwpkAw==",
+  "dgSpecHash": "5/akSnWg79M1GrLZeW8Oy/xpwX/uWsuUWQWe+YxWM2paQqL2KxuT0NTItMzJK+4zr+B+l4tdnxOxHhHhXJIrug==",
   "success": true,
-  "projectFilePath": "D:\\Pilotos\\PM\\Ebra\\Ebra.WPF\\Ebra.WPF.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Pilotos\\PM\\Ebra2\\Ebra\\Ebra.WPF\\Ebra.WPF.csproj",
+  "expectedPackageFiles": [
+    "D:\\NUGET_PACKAGES\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }

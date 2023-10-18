@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ebra.App.Views.MainPage"
-             xmlns:local="clr-namespace:Ebra.App.ViewModels.Start"
-             xmlns:model="clr-namespace:Ebra.App.Models" >
+             xmlns:local="clr-namespace:Ebra.App.ViewModels.Start" 
+             xmlns:model="clr-namespace:Ebra.Models.Models;assembly=Ebra.Models">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Main Page!"

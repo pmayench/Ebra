@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ebra.App\Ebra.App\Ebra.App.csproj" />
+    <ProjectReference Include="..\Ebra.Model\Ebra.Models.csproj" />
     <ProjectReference Include="..\Ebra.Server.API\Ebra.Server.API.csproj" />
   </ItemGroup>
 
