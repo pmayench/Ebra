@@ -1,4 +1,4 @@
-﻿using Ebra.Models.Models;
+﻿using Ebra.App.Models;
 using Ebra.App.Repositories;
 using Ebra.App.Services;
 using Ebra.App.Services.Interfaces;
@@ -16,7 +16,7 @@ namespace Ebra.App
 		{
 			InitializeComponent();
 
-			DependencyService.Register<IGenericRepository<Article>, Repository<Article>>();
+			DependencyService.Register<IGenericRepository<Article>>();
 
 			DependencyService.Register<MockDataStore>();
             //DependencyService.Register<IArticleRepository, MockArticleRepository>();

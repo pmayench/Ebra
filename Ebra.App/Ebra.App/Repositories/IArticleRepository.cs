@@ -1,5 +1,4 @@
-﻿using Ebra.Models.Models;
-using Ebra.Models.Models;
+﻿using Ebra.App.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
