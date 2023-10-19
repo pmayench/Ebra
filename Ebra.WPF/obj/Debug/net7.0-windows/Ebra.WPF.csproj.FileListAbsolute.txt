@@ -20,7 +20,6 @@ D:\Pilotos\PM\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.genruntimeconfig.c
 D:\Pilotos\PM\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\ref\Ebra.WPF.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.csproj.AssemblyReference.cache
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\MainWindow.g.cs
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\ArticleListView.g.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\App.g.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF_MarkupCompile.cache
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF_MarkupCompile.lref
@@ -59,7 +58,6 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\runtimes\win-x86\nati
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\Ebra.Models.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\Ebra.Models.pdb
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\MainWindow.baml
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\ArticleListView.baml
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.g.resources
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.GeneratedMSBuildEditorConfig.editorconfig
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.AssemblyInfoInputs.cache
@@ -71,5 +69,8 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\refint\Ebra.WPF.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.pdb
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Ebra.WPF.genruntimeconfig.cache
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\ref\Ebra.WPF.dll
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\ucArticleList.g.cs
-D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\ucArticleList.baml
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.deps.json
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.runtimeconfig.json
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.exe
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.pdb

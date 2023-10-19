@@ -435,6 +435,25 @@
           }
         }
       },
+      "ArticlesModule/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Ebra.Models": "1.0.0",
+          "Prism.Core": "8.1.97",
+          "Prism.DryIoc": "8.1.97",
+          "Prism.Unity": "8.1.97"
+        },
+        "compile": {
+          "bin/placeholder/ArticlesModule.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArticlesModule.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Ebra.Models/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1440,6 +1459,11 @@
         "unity.container.nuspec"
       ]
     },
+    "ArticlesModule/1.0.0": {
+      "type": "project",
+      "path": "../ArticlesModule/ArticlesModule.csproj",
+      "msbuildProject": "../ArticlesModule/ArticlesModule.csproj"
+    },
     "Ebra.Models/1.0.0": {
       "type": "project",
       "path": "../Ebra.Model/Ebra.Models.csproj",
@@ -1448,6 +1472,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
+      "ArticlesModule >= 1.0.0",
       "Ebra.Models >= 1.0.0",
       "Prism.Core >= 8.1.97",
       "Prism.DryIoc >= 8.1.97",
@@ -1491,6 +1516,9 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
+            "D:\\Pilotos\\PM\\Ebra2\\Ebra\\ArticlesModule\\ArticlesModule.csproj": {
+              "projectPath": "D:\\Pilotos\\PM\\Ebra2\\Ebra\\ArticlesModule\\ArticlesModule.csproj"
+            },
             "D:\\Pilotos\\PM\\Ebra2\\Ebra\\Ebra.Model\\Ebra.Models.csproj": {
               "projectPath": "D:\\Pilotos\\PM\\Ebra2\\Ebra\\Ebra.Model\\Ebra.Models.csproj"
             }

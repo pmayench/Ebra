@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Ebra.WPF/1.0.0": {
         "dependencies": {
+          "ArticlesModule": "1.0.0",
           "Ebra.Models": "1.0.0",
           "Prism.Core": "8.1.97",
           "Prism.DryIoc": "8.1.97",
@@ -295,6 +296,17 @@
           }
         }
       },
+      "ArticlesModule/1.0.0": {
+        "dependencies": {
+          "Ebra.Models": "1.0.0",
+          "Prism.Core": "8.1.97",
+          "Prism.DryIoc": "8.1.97",
+          "Prism.Unity": "8.1.97"
+        },
+        "runtime": {
+          "ArticlesModule.dll": {}
+        }
+      },
       "Ebra.Models/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
@@ -500,6 +512,11 @@
       "sha512": "sha512-47u4MBG8hxV2ZBUK7LlXcZQW8yWSqUSCRG+2/TBA2CSkxkQlMfVUJ0RJODJsZgsiSgy4N0M8HIr7J88drYR/OQ==",
       "path": "unity.container/5.11.11",
       "hashPath": "unity.container.5.11.11.nupkg.sha512"
+    },
+    "ArticlesModule/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Ebra.Models/1.0.0": {
       "type": "project",

@@ -3,6 +3,8 @@ using System.Windows;
 using Prism.Ioc;
 using Ebra.Models.Interfaces;
 using Ebra.Models.Services;
+using Prism.Modularity;
+using System.Reflection;
 
 namespace Ebra.WPF
 {
@@ -19,6 +21,16 @@ namespace Ebra.WPF
             containerRegistry.Register<IOfferService, MockOfferService>();
             containerRegistry.Register<IArticleService, MockArticleService>();
             containerRegistry.Register<IOrderService, MockOrderService>();
+        }
+
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return new ConfigurationModuleCatalog();
+        }
+
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            moduleCatalog.AddModule<ArticlesModule.ModuleArticlesModule>();
         }
     }
 }

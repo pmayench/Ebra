@@ -5,24 +5,12 @@
     <Compile Update="App.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ArticleListView.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\ucArticleList.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="App.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\ArticleListView.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\ucArticleList.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
