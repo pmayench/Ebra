@@ -46,6 +46,10 @@ Used libraries
             Add/ Remove/ Activate/ Deactivate 
          Vistas
             Add/ Remove/ Activate/ Deactivate
+         Modules
+            Modularización
+               Estático: Por código (moduleCatalog.Add (IModule)
+               Dinámico: Por archivo de configuración (App.config)
       MVVM
 
 ## Xamarin Client
