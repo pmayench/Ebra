@@ -38,7 +38,14 @@ $ ./tree-md
 Used libraries
    Prism: 
       Inyección de dependencias
+         Implementación Bootstrapper
+            IContainerRegistry
       Regiones
+         IRegionManager
+         Definiciones
+            Add/ Remove/ Activate/ Deactivate 
+         Vistas
+            Add/ Remove/ Activate/ Deactivate
       MVVM
 
 ## Xamarin Client
