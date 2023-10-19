@@ -1,28 +1,32 @@
-﻿using Prism.DryIoc;
-using System.Windows;
-using Prism.Ioc;
-using Ebra.Models.Interfaces;
-using Ebra.Models.Services;
+﻿using System.Windows;
 
 namespace Ebra.WPF
 {
     /// <summary>
     /// Lógica de interacción para Page1.xaml
     /// </summary>
-    public partial class App : PrismApplication
-    {
-        protected override void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            containerRegistry.Register<IVersionEntityRepository, MockRepositoryVersion>();
-            containerRegistry.Register<IOfferService, MockOfferService>();
-            containerRegistry.Register<IArticleService, MockArticleService>();
-            containerRegistry.Register<IOrderService, MockOrderService>();
-        }
+    //public partial class App : PrismApplication
+    //{
+    //    protected override void RegisterTypes(IContainerRegistry containerRegistry)
+    //    {
 
-        protected override Window CreateShell()
+    //    }
+
+    //    protected override Window CreateShell()
+    //    {
+    //        //throw new NotImplementedException();
+    //        return Container.Resolve<MainWindow>();
+    //    }
+    //}
+
+    public partial class App : Application
+    {
+        protected override void OnStartup(StartupEventArgs e)
         {
-            //throw new NotImplementedException();
-            return Container.Resolve<MainWindow>();
+            base.OnStartup(e);
+
+            var bootstrapper = new Bootstrapper();
+            bootstrapper.Run();
         }
     }
 }

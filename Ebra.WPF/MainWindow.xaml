@@ -4,10 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ebra.WPF"
+        xmlns:prism="http://prismlibrary.com/"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Loaded="LoadRegion">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="326,279,0,0" VerticalAlignment="Top" Height="32" Width="116" Click="Button_Click"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Content="Show" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="116" 
+                Click="btnShow_Click"/>
+        <Button Grid.Column="0" Content="Hide" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="116" 
+        Click="btnHide_Click" Margin="0,37,0,0"/>
+        <ContentControl Grid.Column="1" prism:RegionManager.RegionName="ContentRegion" />
     </Grid>
 </Window>

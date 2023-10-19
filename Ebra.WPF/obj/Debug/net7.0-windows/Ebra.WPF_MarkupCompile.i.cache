@@ -9,12 +9,12 @@ Ebra.WPF
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\App.xaml
+31501601047
 
-3242814801
-
-7782368534
+9-1418894207
 213-861448458
-App.xaml;MainWindow.xaml;Views\ArticleListView.xaml;
+MainWindow.xaml;Views\ArticleListView.xaml;Views\ucArticleList.xaml;
 
 True
 
