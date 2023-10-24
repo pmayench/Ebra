@@ -9,12 +9,12 @@ ArticlesModule
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\App.xaml
+31501601047
 
-4-1000382725
-
-91991054141
+10-715349898
 213-861448458
-App.xaml;MainWindow.xaml;Views\ArticleListView.xaml;Views\ucArticleList.xaml;
+MainWindow.xaml;Views\ArticleListView.xaml;Views\ucArticleList.xaml;
 
-False
+True
 

@@ -6,10 +6,15 @@
       xmlns:local="clr-namespace:ArticlesModule.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ArticleListView">
+      Title="{Binding notification}">
 
     <Grid>
-        <ListView ItemsSource="{Binding Articles}"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content ="ArticleListView" Grid.Row="0"/>
+        <ListView Grid.Row="1" ItemsSource="{Binding Articles}"
           SelectedItem="{Binding SelectedArticle}" >
             <ListView.View>
                 <GridView>

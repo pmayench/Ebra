@@ -7,7 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListView ItemsSource="{Binding Articles}"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content ="{Binding notification}" Grid.Row="0"/>
+        <Button Content="Click" Grid.Row="0" Width="50" Height="30" Command="{Binding ExecuteDelegateCommand}"/>
+        <ListView Grid.Row="1" ItemsSource="{Binding Articles}"
       SelectedItem="{Binding SelectedArticle}" >
             <ListView.View>
                 <GridView>

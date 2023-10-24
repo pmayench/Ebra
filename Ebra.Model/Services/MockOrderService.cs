@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Ebra.Models.Services
 {
-    public class MockOrderService : IOrderService
+    public class MockOrderService : IOrderService, IMock
     {
         public Task<List<Order>> GetOrdersAsync()
         {

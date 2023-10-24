@@ -25,7 +25,8 @@ namespace Ebra.WPF
         IRegionManager _regionManager;
         IRegion contentRegion;
         ucArticleList ucArticleList;
-        ArticleViewModel vModel;
+        //ArticleViewModel vModel;
+        ArticleViewModelPrism vModel;
 
         public MainWindow(IContainerExtension container, IRegionManager regionManager)
         {
@@ -50,7 +51,8 @@ namespace Ebra.WPF
         private void LoadMVVM()
         {
             ucArticleList = _container.Resolve<ucArticleList>();
-            vModel = _container.Resolve<ArticleViewModel>();
+            //vModel = _container.Resolve<ArticleViewModel>();
+            vModel = _container.Resolve<ArticleViewModelPrism>();
             ucArticleList.DataContext = vModel;
         }
 

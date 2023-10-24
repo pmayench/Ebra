@@ -5,10 +5,15 @@ using Ebra.Models.Interfaces;
 using Ebra.Models.Services;
 using Prism.Modularity;
 using System.Reflection;
+using System;
+using System.Linq;
+using Prism.Mvvm;
+using ArticlesModule.Views;
+using ArticlesModule.VM;
 
 namespace Ebra.WPF
 {
-    class Bootstrapper : PrismBootstrapper
+    public partial class Bootstrapper : PrismBootstrapper
     {
         protected override DependencyObject CreateShell()
         {
@@ -31,6 +36,63 @@ namespace Ebra.WPF
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<ArticlesModule.ModuleArticlesModule>();
+            reflectionSample();
+            this.ConfigureViewModelLocator3()
+                .ConfigureViewModelLocator2();
+        }
+
+        protected override void ConfigureViewModelLocator()
+        {
+            base.ConfigureViewModelLocator();
+            // type / type
+            ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), typeof(ArticleViewModelPrism));
+
+            // type / factory
+            //ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), () => Container.Resolve<ArticleViewModelPrism>());
+
+            // generic factory
+            //ViewModelLocationProvider.Register<ucArticleList>(() => Container.Resolve<ArticleViewModelPrism>());
+
+            // generic type
+            //ViewModelLocationProvider.Register<ucArticleList, ArticleViewModelPrism>();
+        }
+
+        private void reflectionSample()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var assemblyModule = typeof(ArticlesModule.ModuleArticlesModule).Assembly;
+
+            var type = typeof(IModule);
+            var types = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(s => s.GetTypes())
+                .Where(p => type.IsAssignableFrom(p));
+        }
+    }
+    
+
+    public static class BootstrapperExtensions
+    {
+        public static Bootstrapper ConfigureViewModelLocator3(this Bootstrapper bootstrapper)
+        {
+            return bootstrapper;
+        }
+
+        public static Bootstrapper ConfigureViewModelLocator2(this Bootstrapper bootstrapper)
+        {
+            return bootstrapper;
+        }
+    }
+
+    public class OtherModule : IModule
+    {
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            throw new NotImplementedException();
         }
     }
 }
