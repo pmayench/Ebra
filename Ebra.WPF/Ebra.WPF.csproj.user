@@ -5,12 +5,24 @@
     <Compile Update="App.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TaskManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MenuView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="App.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TaskManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MenuView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

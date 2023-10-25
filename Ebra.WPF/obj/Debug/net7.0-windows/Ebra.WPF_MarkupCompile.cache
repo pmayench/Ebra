@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\App.xaml
-11407045341
+3809190625
 
-41706223076
+7313591317
 21449954835
-MainWindow.xaml;
+MainWindow.xaml;TaskManager.xaml;Views\MenuView.xaml;
 
 False
 

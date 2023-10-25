@@ -10,6 +10,9 @@ using System.Linq;
 using Prism.Mvvm;
 using ArticlesModule.Views;
 using ArticlesModule.VM;
+using Prism.Regions;
+using Ebra.WPF.VM;
+using Ebra.WPF.Views;
 
 namespace Ebra.WPF
 {
@@ -17,7 +20,7 @@ namespace Ebra.WPF
     {
         protected override DependencyObject CreateShell()
         {
-            return Container.Resolve<MainWindow>();
+            return Container.Resolve<TaskManager>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -37,7 +40,7 @@ namespace Ebra.WPF
         {
             moduleCatalog.AddModule<ArticlesModule.ModuleArticlesModule>();
             reflectionSample();
-            this.ConfigureViewModelLocator3()
+            this.ConfigureRegionsApp()
                 .ConfigureViewModelLocator2();
         }
 
@@ -57,6 +60,7 @@ namespace Ebra.WPF
             //ViewModelLocationProvider.Register<ucArticleList, ArticleViewModelPrism>();
         }
 
+
         private void reflectionSample()
         {
             var assembly = Assembly.GetExecutingAssembly();
@@ -72,8 +76,12 @@ namespace Ebra.WPF
 
     public static class BootstrapperExtensions
     {
-        public static Bootstrapper ConfigureViewModelLocator3(this Bootstrapper bootstrapper)
+        public static Bootstrapper ConfigureRegionsApp(this Bootstrapper bootstrapper)
         {
+            var _regionManager = bootstrapper.Container.Resolve<IRegionManager>();
+            _regionManager.AddToRegion(RegionNames.MenuRegion.ToString(), typeof(MenuView));
+
+
             return bootstrapper;
         }
 

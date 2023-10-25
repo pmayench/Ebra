@@ -1,0 +1,35 @@
+﻿<Window x:Class="Ebra.WPF.TaskManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ebra.WPF"
+        mc:Ignorable="d"
+        xmlns:prism="http://prismlibrary.com/"
+        Title="TaskManager" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Row="0" prism:RegionManager.RegionName="MenuRegion">
+            <Grid Background="Yellow"/>
+        </ContentControl>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="150"/>
+            </Grid.ColumnDefinitions>
+            <ContentControl Grid.Column="0" prism:RegionManager.RegionName="LeftRegion">
+                <Grid Background="Red"/>
+            </ContentControl>
+            <ContentControl Grid.Column="1" prism:RegionManager.RegionName="CentralRegion">
+                <Grid Background="Blue"/>
+            </ContentControl>
+            <ContentControl Grid.Column="2" prism:RegionManager.RegionName="RightRegion">
+                <Grid Background="Green"/>
+            </ContentControl>
+        </Grid>
+    </Grid>
+</Window>

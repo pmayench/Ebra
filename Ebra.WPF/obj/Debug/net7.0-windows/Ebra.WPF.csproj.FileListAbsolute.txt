@@ -74,3 +74,7 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.runtim
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.exe
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ArticlesModule.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\TaskManager.g.cs
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\TaskManager.baml
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\MenuView.g.cs
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\MenuView.baml
