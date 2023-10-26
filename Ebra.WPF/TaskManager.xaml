@@ -12,24 +12,16 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ContentControl Grid.Row="0" prism:RegionManager.RegionName="MenuRegion">
-            <Grid Background="Yellow"/>
-        </ContentControl>
+        <ContentControl Background="Yellow" Grid.Row="0" prism:RegionManager.RegionName="MenuRegion"/>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="150"/>
             </Grid.ColumnDefinitions>
-            <ContentControl Grid.Column="0" prism:RegionManager.RegionName="LeftRegion">
-                <Grid Background="Red"/>
-            </ContentControl>
-            <ContentControl Grid.Column="1" prism:RegionManager.RegionName="CentralRegion">
-                <Grid Background="Blue"/>
-            </ContentControl>
-            <ContentControl Grid.Column="2" prism:RegionManager.RegionName="RightRegion">
-                <Grid Background="Green"/>
-            </ContentControl>
+            <ContentControl Grid.Column="0" prism:RegionManager.RegionName="LeftRegion"/>
+            <ContentControl Grid.Column="1" prism:RegionManager.RegionName="CentralRegion"/>
+            <ContentControl Grid.Column="2" prism:RegionManager.RegionName="RightRegion"/>
         </Grid>
     </Grid>
 </Window>

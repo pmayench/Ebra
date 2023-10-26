@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ProcessModule/1.0.0": {
+        "dependencies": {
+          "Ebra.Infrastructure": "1.0.0",
+          "Prism": "8.1.97.5141",
+          "Prism.Wpf": "8.1.97.5141"
+        },
+        "runtime": {
+          "ProcessModule.dll": {}
+        }
+      },
+      "Ebra.Infrastructure/1.0.0": {
+        "runtime": {
+          "Ebra.Infrastructure.dll": {}
+        }
+      },
+      "Prism/8.1.97.5141": {
+        "runtime": {
+          "Prism.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
+        }
+      },
+      "Prism.Wpf/8.1.97.5141": {
+        "runtime": {
+          "Prism.Wpf.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProcessModule/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ebra.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prism/8.1.97.5141": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prism.Wpf/8.1.97.5141": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

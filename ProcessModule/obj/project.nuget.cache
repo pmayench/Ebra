@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xTx8g7sZUyJg4Dg+iagFR8eZuJ63je5AKa43xbG8g8N/gWa/ES+i0lJTLl3SpY7FMVCHB64nDdZ7HUqlKNtacw==",
+  "success": true,
+  "projectFilePath": "D:\\Pilotos\\PM\\Ebra2\\Ebra\\ProcessModule\\ProcessModule.csproj",
+  "expectedPackageFiles": [
+    "D:\\NUGET_PACKAGES\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

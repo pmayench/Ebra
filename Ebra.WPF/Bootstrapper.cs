@@ -11,8 +11,13 @@ using Prism.Mvvm;
 using ArticlesModule.Views;
 using ArticlesModule.VM;
 using Prism.Regions;
-using Ebra.WPF.VM;
+using System.Windows.Controls;
 using Ebra.WPF.Views;
+using Ebra.WPF.VM;
+using Ebra.Infrastructure.Prism;
+using ProcessModule;
+using ProcessModule.Views;
+using ProcessModule.VM;
 
 namespace Ebra.WPF
 {
@@ -39,9 +44,10 @@ namespace Ebra.WPF
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<ArticlesModule.ModuleArticlesModule>();
-            reflectionSample();
-            this.ConfigureRegionsApp()
-                .ConfigureViewModelLocator2();
+            moduleCatalog.AddModule<ProcessModule.ProcessModule>();
+            moduleCatalog.AddModule<ConfigurationModule.ConfigurationModule>();
+            //reflectionSample();
+            //    .ConfigureViewModelLocator2();
         }
 
         protected override void ConfigureViewModelLocator()
@@ -49,6 +55,7 @@ namespace Ebra.WPF
             base.ConfigureViewModelLocator();
             // type / type
             ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), typeof(ArticleViewModelPrism));
+            ViewModelLocationProvider.Register(typeof(MenuView).ToString(), typeof(MenuViewModel));
 
             // type / factory
             //ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), () => Container.Resolve<ArticleViewModelPrism>());
@@ -60,6 +67,12 @@ namespace Ebra.WPF
             //ViewModelLocationProvider.Register<ucArticleList, ArticleViewModelPrism>();
         }
 
+        //protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+        //{
+        //    base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+        //    regionAdapterMappings.RegisterMapping(typeof(StackPanel), Container.Resolve<StackPanelRegionAdapter>());
+        //    this.ConfigureRegionsApp();
+        //}
 
         private void reflectionSample()
         {
@@ -70,37 +83,6 @@ namespace Ebra.WPF
             var types = AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(s => s.GetTypes())
                 .Where(p => type.IsAssignableFrom(p));
-        }
-    }
-    
-
-    public static class BootstrapperExtensions
-    {
-        public static Bootstrapper ConfigureRegionsApp(this Bootstrapper bootstrapper)
-        {
-            var _regionManager = bootstrapper.Container.Resolve<IRegionManager>();
-            _regionManager.AddToRegion(RegionNames.MenuRegion.ToString(), typeof(MenuView));
-
-
-            return bootstrapper;
-        }
-
-        public static Bootstrapper ConfigureViewModelLocator2(this Bootstrapper bootstrapper)
-        {
-            return bootstrapper;
-        }
-    }
-
-    public class OtherModule : IModule
-    {
-        public void OnInitialized(IContainerProvider containerProvider)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -9,10 +9,13 @@
       "Ebra.WPF/1.0.0": {
         "dependencies": {
           "ArticlesModule": "1.0.0",
+          "ConfigurationModule": "1.0.0",
+          "Ebra.Infrastructure": "1.0.0",
           "Ebra.Models": "1.0.0",
           "Prism.Core": "8.1.97",
           "Prism.DryIoc": "8.1.97",
-          "Prism.Unity": "8.1.97"
+          "Prism.Unity": "8.1.97",
+          "ProcessModule": "1.0.0"
         },
         "runtime": {
           "Ebra.WPF.dll": {}
@@ -307,6 +310,19 @@
           "ArticlesModule.dll": {}
         }
       },
+      "ConfigurationModule/1.0.0": {
+        "dependencies": {
+          "Ebra.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "ConfigurationModule.dll": {}
+        }
+      },
+      "Ebra.Infrastructure/1.0.0": {
+        "runtime": {
+          "Ebra.Infrastructure.dll": {}
+        }
+      },
       "Ebra.Models/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
@@ -314,6 +330,14 @@
         },
         "runtime": {
           "Ebra.Models.dll": {}
+        }
+      },
+      "ProcessModule/1.0.0": {
+        "dependencies": {
+          "Ebra.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "ProcessModule.dll": {}
         }
       }
     }
@@ -518,7 +542,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ConfigurationModule/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ebra.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Ebra.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProcessModule/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

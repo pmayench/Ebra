@@ -19,7 +19,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ArticlesModule\ArticlesModule.csproj" />
+    <ProjectReference Include="..\ConfigurationModule\ConfigurationModule.csproj" />
+    <ProjectReference Include="..\Ebra.Infrastructure\Ebra.Infrastructure.csproj" />
     <ProjectReference Include="..\Ebra.Model\Ebra.Models.csproj" />
+    <ProjectReference Include="..\ProcessModule\ProcessModule.csproj" />
   </ItemGroup>
 
 </Project>

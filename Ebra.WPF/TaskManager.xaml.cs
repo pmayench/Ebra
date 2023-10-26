@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Ebra.Infrastructure.Prism;
+using Ebra.WPF.Views;
+using Prism.Regions;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Ebra.WPF
 {
@@ -19,9 +10,10 @@ namespace Ebra.WPF
     /// </summary>
     public partial class TaskManager : Window
     {
-        public TaskManager()
+        public TaskManager(IRegionManager regionManager)
         {
             InitializeComponent();
+            regionManager.RegisterViewWithRegion(RegionNames.MenuRegion.ToString(), typeof(MenuView));
         }
     }
 }

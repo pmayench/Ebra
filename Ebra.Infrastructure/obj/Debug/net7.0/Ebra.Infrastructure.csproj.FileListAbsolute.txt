@@ -1,0 +1,16 @@
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\bin\Debug\net7.0\Ebra.Infrastructure.deps.json
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\bin\Debug\net7.0\Ebra.Infrastructure.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\bin\Debug\net7.0\Ebra.Infrastructure.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\bin\Debug\net7.0\Prism.Wpf.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\bin\Debug\net7.0\Prism.Wpf.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\bin\Debug\net7.0\Prism.Wpf.xml
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.csproj.AssemblyReference.cache
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.AssemblyInfoInputs.cache
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.AssemblyInfo.cs
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.csproj.CopyComplete
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\refint\Ebra.Infrastructure.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\Ebra.Infrastructure.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.Infrastructure\obj\Debug\net7.0\ref\Ebra.Infrastructure.dll

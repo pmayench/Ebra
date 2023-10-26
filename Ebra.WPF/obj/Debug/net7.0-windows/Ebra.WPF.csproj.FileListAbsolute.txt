@@ -78,3 +78,9 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\TaskManager.g.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\TaskManager.baml
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\MenuView.g.cs
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\Views\MenuView.baml
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\Ebra.Infrastructure.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ProcessModule.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\Ebra.Infrastructure.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ProcessModule.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ConfigurationModule.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ConfigurationModule.pdb

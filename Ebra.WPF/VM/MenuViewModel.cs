@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Ebra.Infrastructure.Prism;
+using Prism.Commands;
 using Prism.Regions;
 using System;
 
@@ -28,7 +29,7 @@ namespace Ebra.WPF.VM
             if (navigatePath == null) return;
 
             _regionManager.RequestNavigate(RegionNames.LeftRegion.ToString(), ViewNames.ProcessListView.ToString());
-            _regionManager.RequestNavigate(RegionNames.CentralRegion.ToString(), ViewNames.ProcessView.ToString());
+            _regionManager.RequestNavigate(RegionNames.CentralRegion.ToString(), ViewNames.ProcessDetailView.ToString());
         }
 
         private void NavigationComplete(NavigationResult result)
@@ -43,27 +44,8 @@ namespace Ebra.WPF.VM
         private void ExecuteConfiguration()
         {
             _regionManager.RequestNavigate(RegionNames.LeftRegion.ToString(), ViewNames.ConfigurationListView.ToString());
-            _regionManager.RequestNavigate(RegionNames.CentralRegion.ToString(), ViewNames.ConfigurationView.ToString());
+            _regionManager.RequestNavigate(RegionNames.CentralRegion.ToString(), ViewNames.ConfigurationDetailView.ToString());
         }
         #endregion
-    }
-
-    public enum RegionNames
-    {
-        MenuRegion,
-        LeftRegion,
-        CentralRegion,
-        RightRegion
-    }
-
-    public enum ViewNames
-    {
-        MenuView,
-        ProcessListView,
-        ProcessView,
-        ConfigurationView,
-        ConfigurationListView,
-        AlertView,
-        AlertListView
     }
 }
