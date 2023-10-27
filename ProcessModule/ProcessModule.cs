@@ -22,11 +22,6 @@ namespace ProcessModule
         {
             containerRegistry.RegisterForNavigation<ProcessListView>();
             containerRegistry.RegisterForNavigation<ProcessDetailView>();
-
-            MapperConfiguration mapperConfiguration = new MapperConfiguration(cfg =>
-            {
-                cfg.AddProfile<ProcessAutoMapper>();
-            });
         }
     }
 }

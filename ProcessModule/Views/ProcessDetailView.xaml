@@ -6,7 +6,31 @@
              xmlns:local="clr-namespace:ProcessModule.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+
+   
     <Grid>
-        <Label Content="Process Detail"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+
+        <Label Grid.Column="0" Grid.Row="0" Content="Name Process"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="{Binding SelectedProcess.Name}"/>
+        
+        <Label Grid.Column="0" Grid.Row="1" Content="CPU"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="{Binding SelectedProcess.CPU}"/>
+
+        <Label Grid.Column="0" Grid.Row="2" Content="Memory"/>
+        <Label Grid.Column="1" Grid.Row="2" Content="{Binding SelectedProcess.Memory}"/>
+
+       
     </Grid>
 </UserControl>

@@ -12,6 +12,7 @@
           "ConfigurationModule": "1.0.0",
           "Ebra.Infrastructure": "1.0.0",
           "Ebra.Models": "1.0.0",
+          "MaterialDesignThemes": "4.9.0",
           "Prism.Core": "8.1.97",
           "Prism.DryIoc": "8.1.97",
           "Prism.Unity": "8.1.97",
@@ -19,6 +20,17 @@
         },
         "runtime": {
           "Ebra.WPF.dll": {}
+        }
+      },
+      "AutoMapper/12.0.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
         }
       },
       "DryIoc.dll/4.7.7": {
@@ -32,13 +44,34 @@
           }
         }
       },
+      "MaterialDesignColors/2.1.4": {
+        "runtime": {
+          "lib/net7.0/MaterialDesignColors.dll": {
+            "assemblyVersion": "2.1.4.0",
+            "fileVersion": "2.1.4.0"
+          }
+        }
+      },
+      "MaterialDesignThemes/4.9.0": {
+        "dependencies": {
+          "MaterialDesignColors": "2.1.4",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
+        },
+        "runtime": {
+          "lib/net7.0/MaterialDesignThemes.Wpf.dll": {
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.9.0.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "runtime": {
           "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
             "assemblyVersion": "1.1.0.0",
-            "fileVersion": "1.1.31.10800"
+            "fileVersion": "1.1.39.4716"
           }
         }
       },
@@ -84,7 +117,7 @@
       },
       "Prism.Wpf/8.1.97": {
         "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31",
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
           "Prism.Core": "8.1.97"
         },
         "runtime": {
@@ -334,6 +367,7 @@
       },
       "ProcessModule/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
           "Ebra.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -348,12 +382,40 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "path": "automapper/12.0.1",
+      "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
     "DryIoc.dll/4.7.7": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-GC2JdW0mN3wTcbcteP7LWwfU1eao0If/vMozCXSbcNZbHQD7kBjcKFO82g0OLssr7gGPWS4+vWpNZ1oOy54JKw==",
       "path": "dryioc.dll/4.7.7",
       "hashPath": "dryioc.dll.4.7.7.nupkg.sha512"
+    },
+    "MaterialDesignColors/2.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C4Oy+qkjMoMPoZKyqYdCnIYtK8c0OSIHmNP73Vgc69NjiUG093xTkE7W/Ks54cTDS7fmWOtUHfwISTVTtb/YKg==",
+      "path": "materialdesigncolors/2.1.4",
+      "hashPath": "materialdesigncolors.2.1.4.nupkg.sha512"
+    },
+    "MaterialDesignThemes/4.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bp9Auw70j+9V7WsUMT4pc8ulVzfL0Eav/tyGgICDirxxhKJwhqtC/6PRkTUm+R1t9611xiDuk5pSUNdDV6vfOQ==",
+      "path": "materialdesignthemes/4.9.0",
+      "hashPath": "materialdesignthemes.4.9.0.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -369,12 +431,12 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LZpuf82ACZWldmfMuv3CTUMDh3o0xo0uHUaybR5HgqVLDBJJ9RZLykplQ/bTJd0/VDt3EhD4iDgUgbdIUAM+Kg==",
-      "path": "microsoft.xaml.behaviors.wpf/1.1.31",
-      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512"
+      "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.39",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

@@ -13,14 +13,11 @@
         </Grid.RowDefinitions>
         <Label Grid.Row="0" Content="Process List"/>
         <ListView Grid.Row="1" ItemsSource="{Binding Processes}"
-SelectedItem="{Binding SelectedArticle}" >
+SelectedItem="{Binding SelectedProcess}" >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Id" Width="80" DisplayMemberBinding="{Binding id}"/>
                     <GridViewColumn Header="Name" Width="160" 
-                  DisplayMemberBinding="{Binding name}" />
-                    <GridViewColumn Header="Description" Width="80" DisplayMemberBinding="{Binding description}"/>
-                    <GridViewColumn Header="Price" Width="80" DisplayMemberBinding="{Binding price}"/>
+                  DisplayMemberBinding="{Binding Name}" />
                 </GridView>
             </ListView.View>
         </ListView>

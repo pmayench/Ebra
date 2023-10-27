@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="Prism">
+      <HintPath>..\..\..\..\..\NUGET_PACKAGES\prism.core\8.1.97\lib\net5.0\Prism.dll</HintPath>
+    </Reference>
     <Reference Include="Prism.Wpf">
       <HintPath>..\..\..\..\..\NUGET_PACKAGES\prism.wpf\8.1.97\lib\net5.0-windows7.0\Prism.Wpf.dll</HintPath>
     </Reference>

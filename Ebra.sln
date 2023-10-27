@@ -26,6 +26,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ebra.WPF", "Ebra.WPF\Ebra.WPF.csproj", "{C591DC62-FDE3-427A-95B3-07A5D9B8665E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D1789F1B-5CAA-4663-B3B6-D4FA1F03997F}"
+	ProjectSection(SolutionItems) = preProject
+		Ebra.WPF\MessageLoadProcessEvent.cs = Ebra.WPF\MessageLoadProcessEvent.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ebra.Models", "Ebra.Model\Ebra.Models.csproj", "{F276FCC8-6C10-4407-909D-F6D62BFE70F8}"
 EndProject
@@ -33,11 +36,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{DD37
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArticlesModule", "ArticlesModule\ArticlesModule.csproj", "{389E6903-FFF4-4E81-B7C4-5F27DE542D13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessModule", "ProcessModule\ProcessModule.csproj", "{573F8E78-92E5-4D24-AB76-E8F06E506A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessModule", "ProcessModule\ProcessModule.csproj", "{573F8E78-92E5-4D24-AB76-E8F06E506A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ebra.Infrastructure", "Ebra.Infrastructure\Ebra.Infrastructure.csproj", "{CB6954C6-C413-4960-8FED-BAD8209E1BCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ebra.Infrastructure", "Ebra.Infrastructure\Ebra.Infrastructure.csproj", "{CB6954C6-C413-4960-8FED-BAD8209E1BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationModule", "ConfigurationModule\ConfigurationModule.csproj", "{B824C164-0D00-47F6-A6E4-A336AEA388E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationModule", "ConfigurationModule\ConfigurationModule.csproj", "{B824C164-0D00-47F6-A6E4-A336AEA388E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,6 +18,8 @@ using Ebra.Infrastructure.Prism;
 using ProcessModule;
 using ProcessModule.Views;
 using ProcessModule.VM;
+using AutoMapper;
+using ProcessModule.Mappers;
 
 namespace Ebra.WPF
 {
@@ -34,6 +36,11 @@ namespace Ebra.WPF
             containerRegistry.Register<IOfferService, MockOfferService>();
             containerRegistry.Register<IArticleService, MockArticleService>();
             containerRegistry.Register<IOrderService, MockOrderService>();
+
+            MapperConfiguration  mapper = new MapperConfiguration(c => c.AddProfile<ProcessAutoMapper>());
+            IMapper iMapper = mapper.CreateMapper();
+
+            containerRegistry.RegisterInstance<IMapper>(iMapper);
         }
 
         protected override IModuleCatalog CreateModuleCatalog()
@@ -56,6 +63,7 @@ namespace Ebra.WPF
             // type / type
             ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), typeof(ArticleViewModelPrism));
             ViewModelLocationProvider.Register(typeof(MenuView).ToString(), typeof(MenuViewModel));
+            ViewModelLocationProvider.Register(typeof(ProcessListView).ToString(), typeof(ProcessViewModel));
 
             // type / factory
             //ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), () => Container.Resolve<ArticleViewModelPrism>());

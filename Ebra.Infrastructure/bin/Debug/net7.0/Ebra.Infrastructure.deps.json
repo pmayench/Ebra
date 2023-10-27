@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v7.0": {
       "Ebra.Infrastructure/1.0.0": {
         "dependencies": {
+          "Prism": "8.1.97.5141",
           "Prism.Wpf": "8.1.97.5141"
         },
         "runtime": {
           "Ebra.Infrastructure.dll": {}
+        }
+      },
+      "Prism/8.1.97.5141": {
+        "runtime": {
+          "Prism.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
         }
       },
       "Prism.Wpf/8.1.97.5141": {
@@ -27,6 +36,11 @@
   "libraries": {
     "Ebra.Infrastructure/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prism/8.1.97.5141": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

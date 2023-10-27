@@ -84,3 +84,6 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\Ebra.Infrastructure.p
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ProcessModule.pdb
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ConfigurationModule.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ConfigurationModule.pdb
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\AutoMapper.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll

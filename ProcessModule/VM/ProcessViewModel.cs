@@ -1,21 +1,56 @@
-﻿using Prism.Mvvm;
+﻿using AutoMapper;
+using Ebra.Infrastructure;
+using Prism.Events;
+using Prism.Mvvm;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace ProcessModule.VM
 {
     public class ProcessViewModel : BindableBase
     {
-        public Process SelectedProcess { get; set; }
-        public ObservableCollection<ProcessDTO> Processes { get; set; }
-        public ProcessViewModel() 
+        private ProcessDTO _selectedProcess;
+        public string Name { get; set; }
+        public ProcessDTO SelectedProcess
         {
-            //var ListProcess = Process.GetProcesses();
-            //var ListProcessDTO = AutoMapper.Mapper.Map<List<Process>, List<ProcessDTO>>(ListProcess.ToList());
-            //Processes = new ObservableCollection<ProcessDTO>(Process.GetProcesses());
-            //SelectedProcess = Processes[0];
+            get { return _selectedProcess; }
+            set
+            {
+                SetProperty(ref _selectedProcess, value);
+            }
+        }
+        private ObservableCollection<ProcessDTO> _processes;
+        public ObservableCollection<ProcessDTO> Processes
+        {
+            get { return _processes; }
+            set
+            {
+                SetProperty(ref _processes, value);
+            }
+        }
+        private readonly IMapper _mapper;
+        private readonly IEventAggregator _eventAggregator;
+        public ProcessViewModel(IMapper mapper, IEventAggregator eventAggregator)
+        {
+          
+            _mapper = mapper;
+            _eventAggregator = eventAggregator;
+
+        }
+
+        public void Load()
+        {
+            _eventAggregator.GetEvent<MessageLoadProcessEvent>().Publish(true);
+
+            var ListProcess = Process.GetProcesses();
+            var ListProcessDTO = _mapper.Map<List<Process>, List<ProcessDTO>>(ListProcess.ToList());
+            Processes = new ObservableCollection<ProcessDTO>(ListProcessDTO);
+            
+            SelectedProcess = Processes[0];
+            _eventAggregator.GetEvent<MessageLoadProcessEvent>().Publish(false);
         }
     }
 
