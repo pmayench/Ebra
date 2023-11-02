@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "i36V0jcknIsRlaQHzfOdySB/ydXKrL4pVG5VAhTLPcrAJlORyk6RGVNVwxVGuq31M59Jgk5fiywjAo+MELm3jQ==",
+  "dgSpecHash": "oU7jPOBEcQgc2W+N/XX523ZDjBUyjDBaAQmBkF/LolduluxuuzXE8GmMUFZseEqY7MsQoAwAQtdFFhAY6pecxQ==",
   "success": true,
   "projectFilePath": "D:\\Pilotos\\PM\\Ebra2\\Ebra\\ConfigurationModule\\ConfigurationModule.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "D:\\NUGET_PACKAGES\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

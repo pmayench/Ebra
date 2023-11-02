@@ -87,3 +87,7 @@ D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ConfigurationModule.p
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\AutoMapper.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\MaterialDesignColors.dll
 D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ShowMeTheXAML.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\obj\Debug\net7.0-windows\App.baml
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ICSharpCode.AvalonEdit.dll
+D:\Pilotos\PM\Ebra2\Ebra\Ebra.WPF\bin\Debug\net7.0-windows\ShowMeTheXAML.AvalonEdit.dll

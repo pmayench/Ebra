@@ -53,3 +53,6 @@ D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\obj\Debug\net7.0-windows\refint\Articles
 D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\obj\Debug\net7.0-windows\ArticlesModule.pdb
 D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\obj\Debug\net7.0-windows\ArticlesModule.genruntimeconfig.cache
 D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\obj\Debug\net7.0-windows\ref\ArticlesModule.dll
+D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\bin\Debug\net7.0-windows\MaterialDesignColors.dll
+D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\bin\Debug\net7.0-windows\MaterialDesignThemes.Wpf.dll
+D:\Pilotos\PM\Ebra2\Ebra\ArticlesModule\bin\Debug\net7.0-windows\ShowMeTheXAML.dll

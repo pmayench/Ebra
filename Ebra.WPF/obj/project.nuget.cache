@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "k1syj4FXJpUxWIopEjOllj9ofpYEv6uASYDhC+p7aT6dQrzve425dW4J0UsdWJqskGHSqsBlY0KXx49/NyKnBw==",
+  "dgSpecHash": "Ch1mr96/mukIM+aIx/np8bbmea0r04uEjELuOIdhsVitRZOToNDo348qAEnB9Ac6v1+3beXIbbXT2hSG0r5vxQ==",
   "success": true,
   "projectFilePath": "D:\\Pilotos\\PM\\Ebra2\\Ebra\\Ebra.WPF\\Ebra.WPF.csproj",
   "expectedPackageFiles": [
     "D:\\NUGET_PACKAGES\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\dryioc.dll\\4.7.7\\dryioc.dll.4.7.7.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
@@ -17,6 +18,9 @@
     "D:\\NUGET_PACKAGES\\prism.dryioc\\8.1.97\\prism.dryioc.8.1.97.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\prism.unity\\8.1.97\\prism.unity.8.1.97.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\showmethexaml\\2.0.0\\showmethexaml.2.0.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\showmethexaml.avalonedit\\2.0.0\\showmethexaml.avalonedit.2.0.0.nupkg.sha512",
+    "D:\\NUGET_PACKAGES\\showmethexaml.msbuild\\2.0.0\\showmethexaml.msbuild.2.0.0.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
     "D:\\NUGET_PACKAGES\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",

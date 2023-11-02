@@ -35,22 +35,30 @@ namespace ProcessModule.VM
         private readonly IEventAggregator _eventAggregator;
         public ProcessViewModel(IMapper mapper, IEventAggregator eventAggregator)
         {
-          
             _mapper = mapper;
             _eventAggregator = eventAggregator;
 
         }
 
-        public void Load()
+        public async Task Load()
         {
+            Processes = new ObservableCollection<ProcessDTO>();
             _eventAggregator.GetEvent<MessageLoadProcessEvent>().Publish(true);
+            var result = await LoadProcess();
+        }
 
-            var ListProcess = Process.GetProcesses();
-            var ListProcessDTO = _mapper.Map<List<Process>, List<ProcessDTO>>(ListProcess.ToList());
-            Processes = new ObservableCollection<ProcessDTO>(ListProcessDTO);
-            
-            SelectedProcess = Processes[0];
-            _eventAggregator.GetEvent<MessageLoadProcessEvent>().Publish(false);
+        public async Task<bool> LoadProcess()
+        {
+            Task.Run(() =>
+            {
+                var ListProcess = Process.GetProcesses();
+                var ListProcessDTO = _mapper.Map<List<Process>, List<ProcessDTO>>(ListProcess.ToList());
+                Processes = new ObservableCollection<ProcessDTO>(ListProcessDTO);
+
+                SelectedProcess = Processes[0];
+                _eventAggregator.GetEvent<MessageLoadProcessEvent>().Publish(false);
+            });
+            return true;
         }
     }
 

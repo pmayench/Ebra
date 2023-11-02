@@ -2,6 +2,8 @@
 using Ebra.Infrastructure.Prism;
 using Ebra.WPF.Views;
 using ImTools;
+using MaterialDesignThemes.Wpf;
+using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -10,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Threading;
 
 namespace Ebra.WPF
@@ -24,24 +27,12 @@ namespace Ebra.WPF
             InitializeComponent();
             regionManager.RegisterViewWithRegion(RegionNames.MenuRegion.ToString(), typeof(MenuView));
         
-            this.DataContext = new TaskManagerVm(eventAggregator);
-
-
+            this.DataContext = new TaskManagerVM(eventAggregator);
         }
-
-
-      
-
     }
 
-
-
-
-    public class TaskManagerVm : BindableBase
+    public class TaskManagerVM : BindableBase
     {
-
-
-
         private bool _isbusy;
         public bool Isbusy
         {
@@ -56,17 +47,60 @@ namespace Ebra.WPF
             set { SetProperty(ref _progressBarVisibility, value); }
         }
 
-        public TaskManagerVm(IEventAggregator eventAggregator)
+        public TaskManagerVM(IEventAggregator eventAggregator)
         {
+            ProgressBarVisibility = Visibility.Hidden;
             eventAggregator.GetEvent<MessageLoadProcessEvent>().Subscribe(OnMessageLoadProcessEvent);
+            DarkModeCommand = new DelegateCommand<object>(ExecuteDarkModeCommand);
+
             //OnMessageLoadProcessEvent(false);
         }
 
         private void OnMessageLoadProcessEvent(bool isbusy)
         {
-            Isbusy = isbusy;
+            if(Application.Current is null || Application.Current.Dispatcher is null)
+            {
+                return;
+            }
+            else
+            {
+                Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() =>
+                {
+                    Isbusy = isbusy;
+                    ProgressBarVisibility = isbusy ? Visibility.Visible : Visibility.Hidden;
+                }));
+            }
+        }
 
-            ProgressBarVisibility = isbusy ? Visibility.Visible : Visibility.Hidden;
+        private bool _isChecked;
+
+        public bool IsChecked
+        {
+            get { return _isChecked; }
+            set
+            {
+                _isChecked = value;
+                //OnPropertyChanged(nameof(IsChecked));
+                SetProperty(ref _isChecked, value);
+            }
+        }
+
+        public ICommand DarkModeCommand { get; }
+
+        private void ExecuteDarkModeCommand(object obj)
+        {
+            PaletteHelper palette = new PaletteHelper();
+            ITheme theme = palette.GetTheme();
+
+            if (IsChecked)
+            {
+                theme.SetBaseTheme(Theme.Dark);
+            }
+            else
+            {
+                theme.SetBaseTheme(Theme.Light);
+            }
+            palette.SetTheme(theme);
         }
     }
 }
