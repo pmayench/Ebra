@@ -2,24 +2,40 @@
 using Ebra.Infrastructure;
 using Prism.Events;
 using Prism.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace ProcessModule.VM
 {
     public class ProcessViewModel : BindableBase
     {
         private ProcessDTO _selectedProcess;
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() =>
+                {
+                    SetProperty(ref _name, value);
+                }));
+            }
+        }
+        private string _name;
+
         public ProcessDTO SelectedProcess
         {
             get { return _selectedProcess; }
             set
             {
                 SetProperty(ref _selectedProcess, value);
+                Name = _selectedProcess.Name;
             }
         }
         private ObservableCollection<ProcessDTO> _processes;
@@ -33,6 +49,7 @@ namespace ProcessModule.VM
         }
         private readonly IMapper _mapper;
         private readonly IEventAggregator _eventAggregator;
+
         public ProcessViewModel(IMapper mapper, IEventAggregator eventAggregator)
         {
             _mapper = mapper;
@@ -60,14 +77,5 @@ namespace ProcessModule.VM
             });
             return true;
         }
-    }
-
-    public class ProcessDTO
-    {
-        public string Name { get; set; }
-        public double CPU { get; set; }
-        public double Memory { get; set; }
-        public double Disk { get; set; }
-        public double Network { get; set; }
     }
 }
