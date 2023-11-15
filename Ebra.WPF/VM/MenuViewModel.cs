@@ -36,7 +36,10 @@ namespace Ebra.WPF.VM
             _processDetailView = _container.Resolve<ProcessDetailView>();
             _configurationListView = _container.Resolve<ConfigurationListView>();
             _processViewModel = _container.Resolve<ProcessViewModel>();
-            
+
+            _processListView.DataContext = _processViewModel;
+            _processDetailView.DataContext = _processViewModel;
+
             _centralRegion = _regionManager.Regions[RegionNames.CentralRegion.ToString()];
             _leftRegion = _regionManager.Regions[RegionNames.LeftRegion.ToString()];
 
@@ -55,19 +58,9 @@ namespace Ebra.WPF.VM
 
         private void ExecuteProcess(string navigatePath)
         {
-            if(_processListView.DataContext == null)
-                _processListView.DataContext = _processViewModel;
-            if (_processDetailView.DataContext == null)
-                _processDetailView.DataContext = _processViewModel;
-
             _leftRegion.Activate(_processListView);
             _centralRegion.Activate(_processDetailView);
             _processViewModel.Load();
-            return;
-            if (navigatePath == null) return;
-
-            _regionManager.RequestNavigate(RegionNames.LeftRegion.ToString(), ViewNames.ProcessListView.ToString());
-            _regionManager.RequestNavigate(RegionNames.CentralRegion.ToString(), ViewNames.ProcessDetailView.ToString());
         }
 
         private void NavigationComplete(NavigationResult result)
@@ -82,9 +75,6 @@ namespace Ebra.WPF.VM
         private void ExecuteConfiguration()
         {
             _leftRegion.Activate(_configurationListView);
-            return;
-            _regionManager.RequestNavigate(RegionNames.LeftRegion.ToString(), ViewNames.ConfigurationListView.ToString());
-            _regionManager.RequestNavigate(RegionNames.CentralRegion.ToString(), ViewNames.ConfigurationDetailView.ToString());
         }
         #endregion
     }

@@ -5,6 +5,7 @@ using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,14 +22,15 @@ namespace ProcessModule.VM
             get { return _name; }
             set
             {
-                Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() =>
-                {
-                    SetProperty(ref _name, value);
-                }));
+                //Application.Current.Dispatcher.BeginInvoke(DispatcherPriority.Background, new Action(() =>
+                //{
+                //    SetProperty(ref _name, value);
+                //}));
+                SetProperty(ref _name, value);
             }
         }
-        private string _name;
 
+        private string _name;
         public ProcessDTO SelectedProcess
         {
             get { return _selectedProcess; }
@@ -36,8 +38,10 @@ namespace ProcessModule.VM
             {
                 SetProperty(ref _selectedProcess, value);
                 Name = _selectedProcess.Name;
+                OnPropertyChanged(new PropertyChangedEventArgs("Name"));
             }
         }
+
         private ObservableCollection<ProcessDTO> _processes;
         public ObservableCollection<ProcessDTO> Processes
         {
@@ -47,6 +51,7 @@ namespace ProcessModule.VM
                 SetProperty(ref _processes, value);
             }
         }
+
         private readonly IMapper _mapper;
         private readonly IEventAggregator _eventAggregator;
 

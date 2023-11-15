@@ -23,7 +23,7 @@
         
 
         <Label Grid.Column="0" Grid.Row="0" Content="Name Process"/>
-        <Label Grid.Column="1" Grid.Row="0" Content="{Binding SelectedProcess.Name}"/>
+        <Label Grid.Column="1" Grid.Row="0" Content="{Binding Name}"/>
 
         <Label Grid.Column="0" Grid.Row="1" Content="CPU"/>
         <Label Grid.Column="1" Grid.Row="1" Content="{Binding SelectedProcess.CPU}"/>

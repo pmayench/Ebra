@@ -16,5 +16,5 @@ TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 2051627873473
 Views\ConfigurationDetailView.xaml;Views\ConfigurationListView.xaml;
 
-False
+True
 

@@ -63,7 +63,8 @@ namespace Ebra.WPF
             // type / type
             ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), typeof(ArticleViewModelPrism));
             ViewModelLocationProvider.Register(typeof(MenuView).ToString(), typeof(MenuViewModel));
-            ViewModelLocationProvider.Register(typeof(ProcessListView).ToString(), typeof(ProcessViewModel));
+            //ViewModelLocationProvider.Register(typeof(ProcessListView).ToString(), typeof(ProcessViewModel));
+            //ViewModelLocationProvider.Register(typeof(ProcessDetailView).ToString(), typeof(ProcessViewModel));
 
             // type / factory
             //ViewModelLocationProvider.Register(typeof(ucArticleList).ToString(), () => Container.Resolve<ArticleViewModelPrism>());

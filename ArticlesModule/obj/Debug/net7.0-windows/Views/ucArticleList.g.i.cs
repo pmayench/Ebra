@@ -53,7 +53,7 @@ namespace ArticlesModule.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ArticlesModule;component/views/ucarticlelist.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ArticlesModule;V1.0.0.0;component/views/ucarticlelist.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ucArticleList.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
